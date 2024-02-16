@@ -1,1 +1,10 @@
 @import'../pages/Home.css';
+@import '../components//Loader.css';
+@import '../pages/Erreur404.css';
+@import '../components/logo.css';
+@import '../components/naviguation.css';
+@import '../components/Contact.css';
+@import '../components/PictoGithub.css';
+@import '../components//PictoLinkedin.css';
+@import '../components/Footer.css';
+@import '';

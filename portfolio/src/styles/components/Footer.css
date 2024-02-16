@@ -1,0 +1,49 @@
+.containFooter{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    max-width: 1400px;
+    width: 100%;
+    margin: auto;
+}
+ul{
+    list-style-type: none;
+}
+li{
+    padding: 10px 0px;
+}
+
+.reseaux-sociaux, .list-contact{
+    max-width: 300px;
+    width: 100%;
+    margin-left: 0px;
+}
+.reseaux-sociaux ul{
+    display: flex;
+}
+.pictoLinkedin, .pictoGithub{
+    max-width: 100px;
+    width: 100%;
+    margin: auto;
+}
+.footer{
+    position: absolute;
+    bottom:0px;
+    left: 0px;
+    max-width: 2400px;
+    width: 100%;
+    margin: auto;
+    background: #f3a49257;
+    padding-top: 50px;
+    padding-bottom: 30px;
+    border-top: #F18971 8px solid;
+}
+.list-contact a{
+    font-size: 20px;
+    color: #0E3653;
+    font-style: inherit;
+    font-weight: 500;
+}
+.list-contact a:hover{
+    color:#008A77;
+}

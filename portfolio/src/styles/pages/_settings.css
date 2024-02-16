@@ -1,0 +1,49 @@
+*{
+    box-sizing: border-box;
+    width:100%;
+    max-width: 2400px;
+    margin: auto;
+}
+h1{
+  font-family: "Dancing Script", cursive;
+  font-optical-sizing: auto;
+  font-weight: weight;
+  font-style: normal;
+}
+h2, h3, h4, p, a {
+  font-family: "El Messiri", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: weight;
+  font-style: normal;
+}
+a{
+  text-decoration: none;
+}
+.App{
+  padding: 20px;
+}
+/* Styles pour le mode jour */
+.day-mode {
+  background-color: #f8f8f8;
+  color: #0D3653;
+}
+
+/* Styles pour le mode nuit */
+.night-mode {
+  background-color: #000000;
+  color: #f8f8f8;
+}
+button{
+  max-width: 50px;
+  width: 100%;
+  border-radius: 50%;
+  padding: 20px 0px;
+  color: #5DBDAF;
+  border: 0px solid;
+  box-shadow: 3px 5px 8px #d6d6d6;
+  background-color: #0D3653;
+  position: fixed;
+  top: 50px;
+  right: 200px;
+}
+
