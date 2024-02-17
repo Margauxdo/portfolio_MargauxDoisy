@@ -1,0 +1,15 @@
+.nav{
+    display: flex;
+    list-style-type: none;
+    max-width: 900px;
+}
+.nav a{
+    font-size: 22px;
+    font-style: normal;
+    text-transform: uppercase;
+    color:#F18971;
+}
+li{
+    text-decoration: none;
+}
+

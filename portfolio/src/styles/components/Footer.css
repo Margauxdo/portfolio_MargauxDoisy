@@ -40,10 +40,7 @@ li{
 }
 .list-contact a{
     font-size: 20px;
-    color: #0E3653;
     font-style: inherit;
     font-weight: 500;
-}
-.list-contact a:hover{
-    color:#008A77;
+    color:#F18971;
 }

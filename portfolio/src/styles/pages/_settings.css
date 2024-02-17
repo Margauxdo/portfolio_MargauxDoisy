@@ -7,8 +7,9 @@
 h1{
   font-family: "Dancing Script", cursive;
   font-optical-sizing: auto;
-  font-weight: weight;
   font-style: normal;
+  font-size: 50px;
+  color:#F18971;
 }
 h2, h3, h4, p, a {
   font-family: "El Messiri", sans-serif;
@@ -18,6 +19,10 @@ h2, h3, h4, p, a {
 }
 a{
   text-decoration: none;
+  color: #008A77;
+}
+a:hover{
+  color:#5EBDB0;
 }
 .App{
   padding: 20px;
@@ -45,5 +50,12 @@ button{
   position: fixed;
   top: 50px;
   right: 200px;
+}
+.header{
+  display: flex;
+  max-width: 1400px;
+  width: 100%;
+  margin: auto;
+  margin-bottom: 100px;
 }
 

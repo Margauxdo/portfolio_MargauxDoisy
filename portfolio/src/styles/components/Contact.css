@@ -1,0 +1,66 @@
+#contact{
+    max-width: 1400px;
+    width: 100%;
+    margin: auto;
+    margin-top: 200px;
+}
+.textContact{
+    position: relative;
+    bottom: 100px;
+    margin-left: 50px;
+}
+.containContact{
+    display: flex;
+    flex-direction: row-reverse;
+    max-width: 1400px;
+    width: 100%;
+    margin: auto;
+    padding-bottom: 200px;
+}
+.containRight{
+    max-width: 530px;
+    width: 80%;
+    margin: auto;
+}
+.containleft{
+    max-width: 700px;
+    width: 100%;
+    margin: auto;
+}
+input, textarea{
+    border: 0px;
+    background-color: #008a7726;
+}
+input{
+    max-width:800px;
+    width: 100%;
+    height:30px
+    
+}
+textarea{
+    max-width:800px;
+    height:150px;
+    width: 100%;
+    margin: auto;
+}
+label{
+    color:#008A77;
+    font-size: 20px;
+   font-family: "El Messiri", sans-serif;
+   text-transform:capitalize;
+   padding:10px 0px;
+   max-width: 800px;
+}
+form{
+    max-width: 800px;
+    width:100%;
+}
+.submitContact{
+    position: relative;
+    left: 700px;
+    border-radius: 10px;
+    padding: 20px 50px;
+    background: #008A77;
+    color: #ededed;
+    text-align: center; 
+}
