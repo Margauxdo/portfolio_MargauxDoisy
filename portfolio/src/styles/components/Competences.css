@@ -1,0 +1,40 @@
+ul {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+li {
+    display: block;
+    margin: auto;
+    width: 200px;
+    text-align-last: center;
+    
+}
+
+li img {
+    width: 80px;
+}
+.dev, .seo, .graf {
+    width: 100%;
+    margin: auto;
+    padding: 20px 0px;
+}
+.dev{
+    max-width: 600px;
+}
+.seo{
+    max-width: 400px;
+}
+.graf{
+    width: 200px;
+}
+
+.bloc-ul{
+    display: flex;
+    max-width: 1400px;
+    width: 100%;
+    margin: auto;
+    justify-content: flex-start;
+    padding: 20px 0px;
+}

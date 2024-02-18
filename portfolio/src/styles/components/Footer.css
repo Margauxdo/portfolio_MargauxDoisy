@@ -14,7 +14,7 @@ li{
 }
 
 .reseaux-sociaux, .list-contact{
-    max-width: 300px;
+    max-width: 400px;
     width: 100%;
     margin-left: 0px;
 }
@@ -27,13 +27,13 @@ li{
     margin: auto;
 }
 .footer{
-    position: absolute;
+    position: fixed;
     bottom:0px;
     left: 0px;
     max-width: 2400px;
     width: 100%;
     margin: auto;
-    background: #f3a49257;
+    background: #ffd4ca;
     padding-top: 50px;
     padding-bottom: 30px;
     border-top: #F18971 8px solid;

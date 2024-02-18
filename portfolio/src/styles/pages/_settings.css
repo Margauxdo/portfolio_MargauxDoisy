@@ -6,10 +6,22 @@
 }
 h1{
   font-family: "Dancing Script", cursive;
-  font-optical-sizing: auto;
-  font-style: normal;
-  font-size: 50px;
-  color:#F18971;
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-size: 60px;
+    color: #F18971;
+    max-width: 1400px;
+    padding-top: 50px;
+    margin-bottom: 50px;
+    text-align: center;
+}
+h2{
+  font-size: 28px;
+    text-transform: capitalize;
+    max-width: 1400px;
+    width: 100%;
+    margin: auto;
+    padding-bottom: 25px;
 }
 h2, h3, h4, p, a {
   font-family: "El Messiri", sans-serif;
@@ -17,9 +29,13 @@ h2, h3, h4, p, a {
   font-weight: weight;
   font-style: normal;
 }
+p{
+  font-size: 20px;
+  font-style: inherit;
+}
 a{
   text-decoration: none;
-  color: #008A77;
+  color: #F18971;
 }
 a:hover{
   color:#5EBDB0;
@@ -27,30 +43,87 @@ a:hover{
 .App{
   padding: 20px;
 }
+.JourNight{
+  position: absolute;
+  top: 50px;
+  right:100px;
+  width: 100px;
+  padding: 15px;
+  border-radius: 5px;
+  border: 0px solid;
+  font-family: "Dancing Script", cursive;
+  font-size: 20px;
+  font-weight: bold;
+  background-color: #F18971;
+  color:#ededed;
+}
 /* Styles pour le mode jour */
 .day-mode {
   background-color: #f8f8f8;
   color: #0D3653;
 }
 
+.day-mode .skills h2{
+  color: #008A77;
+  text-transform: uppercase;
+  text-align-last: start;
+  text-decoration-line: overline;
+
+}
+.skills li{
+    animation:rotateAnimation 5s forwards ease-in-out;
+}
+
+@keyframes rotateAnimation {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+.day-mode .submitContact{
+  background: #5EBDB0;
+  color: #ededed;
+  box-shadow: 2px 2px 6px #8d8989;
+}
+
+
 /* Styles pour le mode nuit */
 .night-mode {
   background-color: #000000;
-  color: #f8f8f8;
+  color: #f6f6f6;
 }
-button{
-  max-width: 50px;
-  width: 100%;
-  border-radius: 50%;
-  padding: 20px 0px;
-  color: #5DBDAF;
-  border: 0px solid;
-  box-shadow: 3px 5px 8px #d6d6d6;
-  background-color: #0D3653;
-  position: fixed;
-  top: 50px;
-  right: 200px;
+.night-mode .list-contact a{
+  text-decoration: none;
+  color: #F18971;
 }
+.night-mode .list-contact a:hover{
+  color:#5EBDB0;
+}
+.night-mode .skills h2{
+  color: #5EBDB0;
+  text-transform: uppercase;
+  text-align-last: start;
+  text-decoration-line: overline;
+}
+.night-mode a{
+  color: #5EBDB0;
+}
+.night-mode a:hover, .night-mode label{
+  color:#F18971;
+}
+.night-mode textarea, .night-mode input{
+  background-color:#f1897130;
+}
+.night-mode .submitContact{
+  background: #F18971;
+  color: #000;
+  box-shadow: 2px 2px 6px #393838;
+}
+
+
+
 .header{
   display: flex;
   max-width: 1400px;
@@ -58,4 +131,5 @@ button{
   margin: auto;
   margin-bottom: 100px;
 }
+
 

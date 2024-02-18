@@ -2,12 +2,16 @@
     max-width: 1400px;
     width: 100%;
     margin: auto;
-    margin-top: 200px;
+    padding-top: 180px;
+    position: relative;
+    bottom: 0px;
+    padding-bottom: 200px;
 }
 .textContact{
     position: relative;
     bottom: 100px;
     margin-left: 50px;
+    padding-top: 50px;
 }
 .containContact{
     display: flex;
@@ -16,6 +20,7 @@
     width: 100%;
     margin: auto;
     padding-bottom: 200px;
+    padding-top: 50px;
 }
 .containRight{
     max-width: 530px;
@@ -29,7 +34,7 @@
 }
 input, textarea{
     border: 0px;
-    background-color: #008a7726;
+    background-color: #5ebdb045;
 }
 input{
     max-width:800px;
@@ -56,11 +61,10 @@ form{
     width:100%;
 }
 .submitContact{
-    position: relative;
-    left: 700px;
-    border-radius: 10px;
-    padding: 20px 50px;
-    background: #008A77;
-    color: #ededed;
-    text-align: center; 
+    margin-top: 20px;
+    padding: 5px 0px;
+    font-size: 18px;
+    font-family: "El Messiri", sans-serif;
+    border-radius: 5px;
+    border: 0px solid;
 }

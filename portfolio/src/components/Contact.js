@@ -34,12 +34,12 @@ const Contact = () => {
         <div>
 
 
-
+        <div className='contact'>
+        <h1>Vous souhaitez me contacter ?</h1>
+        
             <div className='containContact'>
-                <div className='containRight'>
-                
+                <div className='containRight'> 
         <div className='textContact'>
-            <h1>Vous souhaitez me contacter ?</h1>
           <p> Vous recherchez un développeur créatif / front end ?</p>
           <p>Vous pouvez dès maintenant m’envoyer un message grâce à ce formulaire de contact. Si le formulaire ne fonctionne pas, vous pouvez me contacter via ce mail : <a href="mailto:margauxdoisy@gmail.com">margauxdoisy@gmail.com</a></p>
         </div>
@@ -93,7 +93,7 @@ const Contact = () => {
           </form>
         </div>
             </div>
-      
+        </div>
                 </div>
       );
     }
