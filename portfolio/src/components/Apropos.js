@@ -3,8 +3,8 @@ import'../styles/components/Apropos.css';
 
 const Apropos = () => {
     return (
-        <div>
-            
+        <div className='AboutMe'>
+            <h1>Mon parcours</h1>
         </div>
     );
 };

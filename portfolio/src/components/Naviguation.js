@@ -6,9 +6,9 @@ const Naviguation = () => {
     return (
         <div className='nav'>
             <li><Link to="/">Accueil</Link></li>
-            <li><Link to="/apropos">À propos</Link></li>
-            <li><Link to="/portfolio">Portfolio</Link></li>
-            <li><Link to="/contact">Contact</Link></li>
+            <li><a href="#about">À propos</a></li>
+            <li><a href="#portfolio"> Portfolio</a></li>
+            <li><a href="#contact"> Contact</a></li>
         </div>
     );
 };

@@ -3,8 +3,8 @@ import'../styles/components/Portfolio.css';
 
 const Portfolio = () => {
     return (
-        <div>
-            
+        <div className='portfolioMe'>
+            <h1>Mon portfolio</h1>
         </div>
     );
 };

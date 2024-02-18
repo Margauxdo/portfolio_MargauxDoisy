@@ -6,6 +6,7 @@ import Contact from '../components/Contact';
 import Apropos from '../components/Apropos';
 import Competences from '../components/Competences';
 import Portfolio from '../components/Portfolio';
+import Homepage from '../components/Homepage';
 
 const Home = () => {
     return (
@@ -15,15 +16,16 @@ const Home = () => {
                 <Naviguation/>
             </div>
             <div className='homepage'> 
+                <Homepage/>
 
             </div>
-            <div className='techno'> 
+            <div id='techno'> 
                 <Competences/>
             </div>
-            <div className='about'> 
+            <div id='about'> 
                 <Apropos/>
             </div>
-            <div className='portfolio'> 
+            <div id='portfolio'> 
                 <Portfolio/>
             </div>
 
