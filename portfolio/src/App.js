@@ -1,7 +1,10 @@
 import React, { useState, useEffect } from "react";
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import Erreur404 from "./pages/Erreur404";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faMoon, faSun } from '@fortawesome/free-solid-svg-icons';
 import Home from "./pages/Home";
+import CVonline from "./pages/Cvonline";
 
 function App() {
   // Récupérer le mode actuel depuis le stockage local, ou utiliser "jour" par défaut
@@ -14,6 +17,23 @@ function App() {
     localStorage.setItem('mode', newMode);
   };
 
+  useEffect(() => {
+    const handleScroll = () => {
+      const progressBar = document.querySelector('.progressBar');
+      const windowHeight = window.innerHeight;
+      const scrollHeight = document.documentElement.scrollHeight;
+      const scrollTop = window.scrollY;
+      const progressBarHeight = (scrollTop / (scrollHeight - windowHeight)) * 100;
+      progressBar.style.width = progressBarHeight + '%';
+    };
+
+    window.addEventListener('scroll', handleScroll);
+
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, []);
+
   // Mettre à jour le mode lorsque le composant est monté
   useEffect(() => {
     const savedMode = localStorage.getItem('mode');
@@ -25,23 +45,23 @@ function App() {
   return (
     <div className={`App ${mode === 'nuit' ? 'night-mode' : 'day-mode'}`}>
       <BrowserRouter>
+        <div className="progressBar" style={{ height: '5px', background: 'blue', position: 'fixed', top: '0', zIndex: '999', width: '0%' }}></div>
         <Routes>
           <Route path="/" element={<Home />} />
+          <Route path="/cvonline" element={<CVonline />} />
           <Route path="*" element={<Erreur404 />} />
         </Routes>
       </BrowserRouter>
       <button className="JourNight" onClick={toggleMode}>
-        {mode === 'jour' ? 'Nuit' : 'Jour'}
+        {mode === 'jour' ? <FontAwesomeIcon icon={faMoon} /> : <FontAwesomeIcon icon={faSun} />}
       </button>
-
-      
     </div>
-
-    
   );
 }
 
 export default App;
+
+
 
 
 

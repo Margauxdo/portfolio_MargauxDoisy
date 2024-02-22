@@ -1,0 +1,53 @@
+.AboutMe{
+    max-width: 1400px;
+    width: 100%;
+    margin: auto;
+}
+.AboutMe h2{
+    color: #5EBDB0;
+    font-size: 28px;
+    text-transform: uppercase;
+}
+.AboutMe h3{
+    font-family: "Dancing Script", cursive;
+    color: #5EBDB0;
+    font-size: 30px;
+    text-align: center;
+    padding-bottom: 45px;
+}
+.AboutMe p{
+    text-align: justify;
+}
+.portrait-margaux{
+    display: flex;
+    flex-direction: inherit;
+    align-content: space-around;
+    justify-content: space-evenly;
+}
+.portrait-margaux button{
+    max-width: 250px;
+    width: 100%;
+    margin: auto;
+    height: 50px;
+    border-radius: 5px;
+    border: 0px;
+    font-size: 18px;
+    text-align: center;
+    display: block;
+    background: #5EBDB0;
+    color: #f6f6f6;
+    box-shadow: 2px 3px 7px #a0a0a0;
+}
+.portrait-margaux button:hover{
+    background-color: #F18971;
+}
+.portrait-img{
+    max-width: 500px;
+    width: 100%;
+    margin: auto;
+}
+.portrait-text{
+    max-width: 800px;
+    width:100%;
+    margin: auto;
+}

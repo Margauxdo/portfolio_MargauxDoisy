@@ -8,12 +8,13 @@ h1{
   font-family: "Dancing Script", cursive;
     font-optical-sizing: auto;
     font-style: normal;
-    font-size: 60px;
+    font-size: 70px;
     color: #F18971;
     max-width: 1400px;
-    padding-top: 50px;
     margin-bottom: 50px;
-    text-align: center;
+    text-shadow: 3px 4px 5px #bab9b9;
+    border-top: 1px solid;
+    margin-top: 200px;
 }
 h2{
   font-size: 28px;
@@ -30,7 +31,7 @@ h2, h3, h4, p, a {
   font-style: normal;
 }
 p{
-  font-size: 20px;
+  font-size: 22px;
   font-style: inherit;
 }
 a{
@@ -40,6 +41,15 @@ a{
 a:hover{
   color:#5EBDB0;
 }
+.progressBar {
+  height: 15px;
+  background: #F18971;
+  position: fixed;
+  top: 0px;
+  z-index: 999;
+  width: 0%;
+}
+
 .App{
   padding: 20px;
 }
@@ -62,14 +72,10 @@ a:hover{
   background-color: #f8f8f8;
   color: #0D3653;
 }
-
-.day-mode .skills h2{
-  color: #008A77;
-  text-transform: uppercase;
-  text-align-last: start;
-  text-decoration-line: overline;
-
+.day-mode p{
+  color: #0D3653;
 }
+
 .skills li{
     animation:rotateAnimation 5s forwards ease-in-out;
 }
@@ -87,6 +93,9 @@ a:hover{
   color: #ededed;
   box-shadow: 2px 2px 6px #8d8989;
 }
+.day-mode .submitContact:hover{
+  background-color: #F18971;
+}
 
 
 /* Styles pour le mode nuit */
@@ -94,12 +103,27 @@ a:hover{
   background-color: #000000;
   color: #f6f6f6;
 }
+.night-mode .nav a{
+  color: #F18971;
+}
+.night-mode .nav a:hover{
+  color: #008A77;
+}
+.night-mode .overlay span {
+  color: #F18971;
+}
 .night-mode .list-contact a{
   text-decoration: none;
   color: #F18971;
 }
+.night-mode .containSite h2, .night-mode .containSite p{
+  color:#5EBDB0;
+}
 .night-mode .list-contact a:hover{
   color:#5EBDB0;
+}
+.night-mode h1{
+  text-shadow: 3px 4px 5px #414141;
 }
 .night-mode .skills h2{
   color: #5EBDB0;
@@ -118,8 +142,17 @@ a:hover{
 }
 .night-mode .submitContact{
   background: #F18971;
-  color: #000;
+  color: #ededed;
   box-shadow: 2px 2px 6px #393838;
+}
+.night-mode .submitContact:hover{
+  background-color: #008A77;
+}
+.night-mode .portrait-margaux button{
+  box-shadow: 2px 3px 7px #5e5e5e;
+}
+.JourNight svg{
+  font-size: 30px;
 }
 
 

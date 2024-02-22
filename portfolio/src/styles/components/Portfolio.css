@@ -1,1 +1,89 @@
-
+.portdolio{
+    max-width: 1400px;
+    width:100%;
+    margin: auto;
+}
+.portfolioContent ul {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    max-width: 1400px;
+    width: 100%;
+}
+.portfolioContent ul li {
+    max-width: 1400px;
+    width:100%;
+    margin: auto;
+    display: block;
+}
+.portfolioContent img{
+    max-width: 1000px;
+    width: 100%;
+    margin: auto;
+    height: 700px;
+    object-fit: contain;
+}
+.overlay span{
+    font-size: 25px;
+    text-transform: uppercase;
+    text-decoration: overline;
+}
+.containSite{
+    max-width: 1400px;
+    width: 100%;
+    margin: auto;
+    position: relative;
+    top: 70px;
+}
+.containSite h2{
+    font-family: "Dancing Script", cursive;
+    color: #0D3653;
+    font-size: 50px;
+    
+}
+.containSite p{
+    font-size: 22px;
+    color: #0D3656;
+    font-style: oblique;
+    text-align: left;
+}
+.fullstack{
+    position: relative;
+    bottom: 80px
+}
+.carousel-buttons{
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    bottom: 700px;
+}
+.carousel-buttons svg{
+    font-size: 60px;
+    color:#008A77;
+}
+.carousel-buttons button{
+    background: none;
+    border: 0px;
+}
+.carousel-dots {
+    margin-bottom: 50px;
+    text-align: center;
+    position: relative;
+    bottom: 350px;
+  }
+  
+  .carousel-dots span {
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background-color: #008a7859;
+    margin: 0 5px;
+    cursor: pointer;
+  }
+  
+  .carousel-dots span.active {
+    background-color: #008A77;
+  }
+  

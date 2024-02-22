@@ -2,9 +2,6 @@
     max-width: 1400px;
     width: 100%;
     margin: auto;
-    padding-top: 180px;
-    position: relative;
-    bottom: 0px;
     padding-bottom: 200px;
 }
 .textContact{
@@ -50,7 +47,7 @@ textarea{
 }
 label{
     color:#008A77;
-    font-size: 20px;
+    font-size: 24px;
    font-family: "El Messiri", sans-serif;
    text-transform:capitalize;
    padding:10px 0px;

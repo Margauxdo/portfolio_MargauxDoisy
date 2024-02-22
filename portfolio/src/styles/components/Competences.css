@@ -11,8 +11,12 @@ li {
     text-align-last: center;
     
 }
-
-li img {
+.skills h2{
+    color: #008A77;
+    text-transform: uppercase;
+    text-decoration: underline;
+}
+.skills li img {
     width: 80px;
 }
 .dev, .seo, .graf {
