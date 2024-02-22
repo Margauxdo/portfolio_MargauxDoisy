@@ -21,7 +21,7 @@
     max-width: 1000px;
     width: 100%;
     margin: auto;
-    height: 700px;
+    height: 500px;
     object-fit: contain;
 }
 .overlay span{
@@ -85,5 +85,7 @@
   
   .carousel-dots span.active {
     background-color: #008A77;
+    width: 18px;
+    height: 18px;
   }
   

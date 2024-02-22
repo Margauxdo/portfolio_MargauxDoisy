@@ -6,6 +6,7 @@ import { faMoon, faSun } from '@fortawesome/free-solid-svg-icons';
 import Home from "./pages/Home";
 import CVonline from "./pages/Cvonline";
 
+
 function App() {
   // Récupérer le mode actuel depuis le stockage local, ou utiliser "jour" par défaut
   const [mode, setMode] = useState(localStorage.getItem('mode') || 'jour');
@@ -45,7 +46,7 @@ function App() {
   return (
     <div className={`App ${mode === 'nuit' ? 'night-mode' : 'day-mode'}`}>
       <BrowserRouter>
-        <div className="progressBar" style={{ height: '5px', background: 'blue', position: 'fixed', top: '0', zIndex: '999', width: '0%' }}></div>
+        <div className="progressBar" ></div>
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/cvonline" element={<CVonline />} />

@@ -29,11 +29,7 @@ const CVonline = () => {
                 <Naviguation/>
             </div>
             <div className="progressBar"></div>
-            <div className='bannerTitle'>
-                <h1>A propos</h1>
-                
-                
-            </div>
+
             
             <div className='containAPropos'>
                 <div className='imageSection'>
@@ -50,11 +46,11 @@ const CVonline = () => {
 <h2>Margaux Doisy</h2>
 
     </div> 
-                    <h3>Développeuse web et passioné </h3>
+                    <h3>Développeuse Frontend junior </h3>
                     <p>
                     Passionnée par le développement web et déterminée à me perfectionner dans ce domaine,
-                     je suis animée par le désir d'apporter mes compétences et mon expertise à 
-                     votre entreprise.  
+                     je suis animée par le désir d'apporter mes compétences et mon expertise au
+                     sen d'une entreprise.  
                        Ayant effectué un virement à 360 degrés pour
                         devenir Développeuse web, mon objectif est de 
                         concevoir des solutions digitales sur mesure,

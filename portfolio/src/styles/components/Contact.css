@@ -65,3 +65,44 @@ form{
     border-radius: 5px;
     border: 0px solid;
 }
+
+
+/* Animation pour les div contenant les champs du formulaire */
+.containLeft form div {
+    opacity: 0; /* Les divs sont initialement transparents */
+    animation: fadeIn 0.5s ease forwards; /* Animation pour afficher les divs */
+  }
+  
+  /* Définition de l'animation pour afficher les divs */
+  @keyframes fadeIn {
+    from {
+      opacity: 0; /* Début de l'animation : div transparent */
+      transform: translateY(-20px); /* Translation vers le haut */
+    }
+    to {
+      opacity: 1; /* Fin de l'animation : div opaque */
+      transform: translateY(0); /* Aucune translation */
+    }
+  }
+  
+  /* Décalage d'animation pour chaque div du formulaire */
+  .containLeft form div:nth-child(1) {
+    animation-delay: 2.2s; /* Décalage de 0.2 secondes pour le premier div */
+  }
+  
+  .containLeft form div:nth-child(2) {
+    animation-delay: 2.4s; /* Décalage de 0.4 secondes pour le deuxième div */
+  }
+  
+  .containLeft form div:nth-child(3) {
+    animation-delay: 2.6s; /* Décalage de 0.6 secondes pour le troisième div */
+  }
+  
+  .containLeft form div:nth-child(4) {
+    animation-delay: 2.8s; /* Décalage de 0.8 secondes pour le quatrième div */
+  }
+  
+  .containLeft form div:nth-child(5) {
+    animation-delay: 1s; /* Décalage de 1 seconde pour le cinquième div */
+  }
+  

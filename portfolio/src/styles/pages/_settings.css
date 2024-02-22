@@ -15,6 +15,17 @@ h1{
     text-shadow: 3px 4px 5px #bab9b9;
     border-top: 1px solid;
     margin-top: 200px;
+    animation: slideInFromRight 5s ease forwards;
+}
+@keyframes slideInFromRight {
+  from {
+    opacity: 0;
+    transform: translateX(100%);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
 }
 h2{
   font-size: 28px;
@@ -42,12 +53,23 @@ a:hover{
   color:#5EBDB0;
 }
 .progressBar {
-  height: 15px;
-  background: #F18971;
   position: fixed;
-  top: 0px;
+  left: 0;
+  top:0px;
+  height: 15px;
+  background:linear-gradient(172deg, #f18971, #f1897129);
   z-index: 999;
-  width: 0%;
+  transition: height 0.3s ease;
+}
+
+/* Cette règle CSS fera en sorte que la barre de progression se déplace de haut en bas */
+.progressBar.scrollTop {
+  top: 0;
+}
+
+/* Cette règle CSS fera en sorte que la barre de progression se déplace de bas en haut */
+.progressBar.scrollBottom {
+  bottom: 0;
 }
 
 .App{
@@ -102,6 +124,9 @@ a:hover{
 .night-mode {
   background-color: #000000;
   color: #f6f6f6;
+}
+.night-mode .progressBar{
+  background:linear-gradient(172deg, #008A77, #008a784d);
 }
 .night-mode .nav a{
   color: #F18971;
