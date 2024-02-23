@@ -68,6 +68,9 @@
     background-color: #5EBDB0;
     width: 200px;
 }
+.portfolioOnline:hover{
+    background-color: #F18971;
+}
 .portfolioOnline a, .portfolioOnline a:hover{
     color:#ededed;
 }

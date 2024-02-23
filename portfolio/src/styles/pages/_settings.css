@@ -195,8 +195,17 @@ a:hover{
 .night-mode .portfolioOnline{
   background-color:#F18971;
 }
+.night-mode .portfolioOnline:hover{
+  background-color:#ffa38e;
+}
+.night-mode.CvOnline:hover{
+  background-color: #F18971;
+}
 .CvOnline{
   background-color: #ffa38e;
+}
+.CvOnline:hover{
+  background-color: #008A77;
 }
 .night-mode .portfolioOnline a,.night-mode .portfolioOnline a:hover{
   color:#ededed;
