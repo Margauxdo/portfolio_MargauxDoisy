@@ -1,8 +1,10 @@
 #contact{
-    max-width: 1400px;
-    width: 100%;
-    margin: auto;
-    padding-bottom: 200px;
+  max-width: 1400px;
+  width: 100%;
+  margin: auto;
+  position: relative;
+  bottom: 500px;
+
 }
 .textContact{
     position: relative;

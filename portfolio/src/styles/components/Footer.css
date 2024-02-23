@@ -10,7 +10,12 @@ ul{
     list-style-type: none;
 }
 li{
-    padding: 10px 0px;
+    display: block;
+    margin: auto;
+    width: 200px;
+    text-align-last: justify;
+    margin-right: 0px;
+    padding-bottom: 15px;
 }
 
 .reseaux-sociaux, .list-contact{
@@ -38,9 +43,17 @@ li{
     padding-bottom: 30px;
     border-top: #F18971 8px solid;
 }
+.list-contact{
+    position: relative;
+    right: 200px;
+    display: block;
+}
 .list-contact a{
     font-size: 20px;
     font-style: inherit;
     font-weight: 500;
-    color:#F18971;
+    color:#0D3653;
+}
+.list-contact a:hover{
+    color:#008A77;
 }

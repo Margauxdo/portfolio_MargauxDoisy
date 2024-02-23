@@ -1,0 +1,167 @@
+.mainHistory{
+    position: relative;
+    bottom: 150px;
+}
+.imageSection {
+    position: fixed;
+    top: 15px;
+    left: 0;
+    width: 850px;
+    /* height: 0px; */
+    height: auto;
+    z-index: 0;
+}
+
+.textSection {
+    margin: auto;
+    position: relative;
+    width: 800px;
+    left: 400px;
+    top: 200px;
+}
+.mainCV .logo{
+    position: relative;
+    left: 0px;
+    top: 30px;
+    max-width: 100px;
+
+}
+.formation, .projets, .competences {
+    margin-bottom: 50px;
+}
+.presentation .containTitle h2{
+    font-size: 75px;
+    font-family: "Dancing Script", cursive;
+    text-align: end;
+    margin-bottom: 50px;
+    color:#0D3653;
+}
+.presentation h3{
+    font-family: "Dancing Script", cursive;
+    font-size: 55px;
+    text-align: end;
+    color: #f18971;
+    font-weight: 200;
+    font-style: oblique;
+    margin-bottom: 40px;
+
+}
+.presentation{
+    margin-bottom: 70px;
+
+}
+.mainHistory h2{
+    font-family: "Dancing Script", cursive;
+    color: #008A77;
+    font-size: 50px;
+    font-weight: 100;
+    text-align: justify;
+    margin-bottom: 15px;
+}
+.formation h4{
+    font-size: 22px;
+    font-weight: 500;
+    text-decoration-line: overline;
+    color: hsla(240,7%,62%,1);
+    margin-bottom: 5px;
+}
+.formation p, .projets p{
+    font-style: italic;
+    font-weight: 100;
+    margin-bottom: 20px;
+}
+.projets h4, .competences h4{
+    font-size: 22px;
+    font-weight: 500;
+    color: hsla(240,7%,62%,1);
+    margin-bottom: 5px;
+}
+.projets a{
+    color: #F18971;
+    font-weight: lighter;
+    text-decoration: overline;
+    font-family: monospace;
+}
+.competences li{
+    max-width: 80px;
+}
+.qualites p{
+    margin-bottom: 200px
+}
+.mainCV img{
+    filter: blur(10px);
+    animation: sharpnessImg 3s forwards;
+}
+@keyframes sharpnessImg {
+    from {
+      filter: blur(10px); /* Début de l'animation, flou à 10px */
+    }
+    to {
+      filter: blur(0px); /* Fin de l'animation, netteté totale (0px de flou) */
+    }
+  }
+  .listService img{
+    filter: blur(10px);
+    animation: sharpnessService 15s forwards;
+  }
+  @keyframes sharpnessService {
+    from {
+      filter: blur(10px); /* Début de l'animation, flou à 10px */
+    }
+    to {
+      filter: blur(0px); /* Fin de l'animation, netteté totale (0px de flou) */
+    }
+  }
+  .listUsers img{
+    filter: blur(10px);
+    animation: sharpnessService 18s forwards;
+  }
+  @keyframes sharpnessService {
+    from {
+      filter: blur(10px); 
+    }
+    to {
+      filter: blur(0px); 
+    }
+  }
+  .presentation, .formation, .projets, .competences, .qualites {
+    opacity: 0;
+    animation-duration: 3s;
+    animation-fill-mode: forwards;
+}
+
+.presentation {
+    animation-name: fade-in;
+    animation-delay: 2s; /* Le texte de la présentation apparaîtra après 2 secondes */
+}
+
+.formation {
+    animation-name: fade-in;
+    animation-delay: 5s; /* Le texte de la formation apparaîtra après 5 secondes */
+}
+
+.projets {
+    animation-name: fade-in;
+    animation-delay: 9s; /* Le texte des projets apparaîtra après 10 secondes */
+}
+
+.competences {
+    animation-name: fade-in;
+    animation-delay: 13s; /* Le texte des compétences apparaîtra après 15 secondes */
+}
+
+.qualites {
+    animation-name: fade-in;
+    animation-delay: 16s; /* Le texte des qualités apparaîtra après 20 secondes */
+}
+
+@keyframes fade-in {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+ 

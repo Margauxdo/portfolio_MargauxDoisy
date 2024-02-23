@@ -1,3 +1,7 @@
+#techno{
+    position: relative;
+    bottom: 250px;
+}
 ul {
     display: flex;
     justify-content: center;
@@ -8,8 +12,14 @@ li {
     display: block;
     margin: auto;
     width: 200px;
-    text-align-last: center;
-    
+    text-align-last: center;   
+}
+.portfolioContent a{
+    color: #008A77;
+}
+.skills{
+    position: relative;
+    top: 100px;
 }
 .skills h2{
     color: #008A77;
@@ -19,19 +29,15 @@ li {
 .skills li img {
     width: 80px;
 }
-.dev, .seo, .graf {
-    width: 100%;
-    margin: auto;
-    padding: 20px 0px;
-}
+
 .dev{
-    max-width: 600px;
+    max-width: 1400px;
 }
 .seo{
-    max-width: 400px;
+    max-width: 1000px;
 }
 .graf{
-    width: 200px;
+    width: 800px;
 }
 
 .bloc-ul{

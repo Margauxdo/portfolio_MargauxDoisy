@@ -1,3 +1,7 @@
+#about{
+    position: relative;
+    bottom: 300px;
+}
 .AboutMe{
     max-width: 1400px;
     width: 100%;

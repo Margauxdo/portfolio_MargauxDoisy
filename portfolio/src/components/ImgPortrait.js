@@ -4,7 +4,7 @@ import '../styles/components/ImgPortrait.css';
 const ImgPortrait = () => {
     return (
         <div>
-            <img src='./portrait-margaux.jpg' alt='portrait de margaux Doisy'/>
+            <img src='./margauxDoisy.png' alt='portrait de margaux Doisy'/>
         </div>
     );
 };

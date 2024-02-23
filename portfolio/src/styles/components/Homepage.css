@@ -1,0 +1,78 @@
+.homepage{
+    background: linear-gradient(90deg, #f18971, transparent);
+    max-width: 2400px;
+    position: relative;
+    bottom: 150px;
+    height: 600px;
+    z-index: 0;
+    animation: slideRight 6s ease forwards
+}
+@keyframes slideRight {
+  from {
+    opacity: 0;
+    transform: translateX(100%);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+.homepage h1{
+    font-size: 70px;
+    max-width: 600px;
+    border-top: 0px;
+    text-shadow: none;
+    color: #0D3653;
+    text-transform: capitalize;
+    text-align-last: justify;
+    position: relative;
+    right: 100px;
+    top: 100px;
+    text-align: justify;
+}
+.homepage img{
+    width: 300px;
+    position: absolute;
+    right: 350px;
+    top: 150px;
+    animation: flotter 5s ease-in-out infinite;
+    z-index: 9999;
+}
+
+@keyframes flotter {
+    0% {
+        transform: translateY(0); /* Position initiale */
+    }
+    50% {
+        transform: translateY(-20px); /* Position haute */
+    }
+    100% {
+        transform: translateY(0); /* Retour à la position initiale */
+    }
+}
+.mainButton{
+    max-width: 700px;
+    position: relative;
+    top: 150px;
+    right: 200px;
+}
+.homepage button{
+    padding: 15px;
+    border-radius: 25px;
+    border: 0px solid;
+    font-size: 18px;
+    box-shadow: 3px 3px 7px #656363;
+    font-family: "El Messiri", sans-serif;
+}
+.portfolioOnline{
+    background-color: #5EBDB0;
+    width: 200px;
+}
+.portfolioOnline a, .portfolioOnline a:hover{
+    color:#ededed;
+}
+.CvOnline{
+    background-color: #008A77;
+    color:#ededed;
+    width:300px;
+}

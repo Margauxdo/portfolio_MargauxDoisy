@@ -1,7 +1,22 @@
-.portdolio{
+#portfolio{
+    background: linear-gradient(90deg, #f18971, transparent);
+    max-width: 2400px;
+    position: relative;
+    bottom: 150px;
+    z-index: 0;
+    position: relative;
+    bottom: 400px;
+}
+.portfolio{
     max-width: 1400px;
     width:100%;
     margin: auto;
+}
+.portfolioMe h1{
+    border-top: 0px;
+    text-shadow: none;
+    color: #0D3653;
+    padding-top: 50px;
 }
 .portfolioContent ul {
     display: flex;
@@ -59,8 +74,8 @@
     bottom: 700px;
 }
 .carousel-buttons svg{
-    font-size: 60px;
-    color:#008A77;
+    font-size: 65px;
+    color:#0D3653;
 }
 .carousel-buttons button{
     background: none;
@@ -78,13 +93,13 @@
     width: 15px;
     height: 15px;
     border-radius: 50%;
-    background-color: #008a7859;
+    background-color: #0d365365;
     margin: 0 5px;
     cursor: pointer;
   }
   
   .carousel-dots span.active {
-    background-color: #008A77;
+    background-color: #0D3653;
     width: 18px;
     height: 18px;
   }

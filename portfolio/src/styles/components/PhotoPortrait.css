@@ -1,6 +1,6 @@
 .portrait img {
     filter: blur(10px); /* Flou initial à 0% */
-    animation: sharpness 5s forwards; /* Animation de 0% à 100% sur 5 secondes */
+    animation: sharpness 18s forwards; /* Animation de 0% à 100% sur 5 secondes */
   }
   
   @keyframes sharpness {

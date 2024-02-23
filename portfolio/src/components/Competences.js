@@ -15,9 +15,9 @@ import Reactjs from './Reactjs';
 const Competences = () => {
     return (
         <div className='skills'>
-            <h1>Mes compétences en développement</h1>
+   
             <div className='bloc-ul'>
-                <h2>Développement Back-end & Front-end</h2>
+               
                     <ul className='dev'>
                         <li><CSS/></li>
                         <li><Reactjs/></li>
@@ -28,7 +28,7 @@ const Competences = () => {
                     </ul>
             </div>
             <div className='bloc-ul'>   
-                <h2>CMS & SEO</h2>
+
                     <ul className='seo'>
                         <li><Wordpress/></li>
                         <li><Github/></li>
@@ -36,7 +36,7 @@ const Competences = () => {
                     </ul>
             </div>
             <div className='bloc-ul'>
-                <h2>Logiciels graphiques</h2>
+   
                     <ul className='graf'>
                         <li><Illustrator/></li>
                         <li><Photoshop/></li>

@@ -15,7 +15,8 @@ h1{
     text-shadow: 3px 4px 5px #bab9b9;
     border-top: 1px solid;
     margin-top: 200px;
-    animation: slideInFromRight 5s ease forwards;
+    animation: slideInFromRight 7s ease forwards;
+    text-align: justify;
 }
 @keyframes slideInFromRight {
   from {
@@ -40,6 +41,7 @@ h2, h3, h4, p, a {
   font-optical-sizing: auto;
   font-weight: weight;
   font-style: normal;
+  text-align: justify;
 }
 p{
   font-size: 22px;
@@ -98,18 +100,7 @@ a:hover{
   color: #0D3653;
 }
 
-.skills li{
-    animation:rotateAnimation 5s forwards ease-in-out;
-}
 
-@keyframes rotateAnimation {
-    0% {
-        transform: rotate(0deg);
-    }
-    100% {
-        transform: rotate(360deg);
-    }
-}
 .day-mode .submitContact{
   background: #5EBDB0;
   color: #ededed;
@@ -131,21 +122,21 @@ a:hover{
 .night-mode .nav a{
   color: #F18971;
 }
+
 .night-mode .nav a:hover{
   color: #008A77;
 }
 .night-mode .overlay span {
   color: #F18971;
 }
-.night-mode .list-contact a{
-  text-decoration: none;
-  color: #F18971;
+.night-mode .AboutMe h2, .night-mode .AboutMe h3{
+  color:#F18971;
 }
-.night-mode .containSite h2, .night-mode .containSite p{
+.night-mode h1{
   color:#5EBDB0;
 }
-.night-mode .list-contact a:hover{
-  color:#5EBDB0;
+.night-mode .homepage{
+  background: linear-gradient(281deg, #87ffef, #203e3a5e);
 }
 .night-mode h1{
   text-shadow: 3px 4px 5px #414141;
@@ -165,6 +156,18 @@ a:hover{
 .night-mode textarea, .night-mode input{
   background-color:#f1897130;
 }
+.night-mode .buttonCv{
+  background-color:#F18971;
+}
+.night-mode #portfolio{
+  background: linear-gradient(281deg, #87ffef, #203e3a5e);;
+}
+.night-mode .portfolioMe h1, .night-mode .carousel-buttons svg, .night-mode .containSite h2, .night-mode .containSite p, .night-mode .portfolioMe .carousel-dots span.active {
+  color:#ededed;
+}
+.night-mode .buttonCv:hover{
+  background-color:#5EBDB0;
+}
 .night-mode .submitContact{
   background: #F18971;
   color: #ededed;
@@ -176,10 +179,28 @@ a:hover{
 .night-mode .portrait-margaux button{
   box-shadow: 2px 3px 7px #5e5e5e;
 }
+.night-mode .homepage h1{
+  color:#cae9ff
+}
 .JourNight svg{
   font-size: 30px;
 }
+.night-mode .portfolioMe .carousel-dots span {
+  background-color: #ededed72;  
+}
 
+.night-mode .portfolioMe .carousel-dots span.active {
+  background-color: #ededed;
+}
+.night-mode .portfolioOnline{
+  background-color:#F18971;
+}
+.CvOnline{
+  background-color: #ffa38e;
+}
+.night-mode .portfolioOnline a,.night-mode .portfolioOnline a:hover{
+  color:#ededed;
+}
 
 
 .header{
