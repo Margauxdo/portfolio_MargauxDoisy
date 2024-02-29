@@ -39,8 +39,8 @@ const Portfolio = () => {
                     ))}
                 </ul>
                 <div className='carousel-buttons'>
-                    <button onClick={prevSlide}><FontAwesomeIcon icon={faChevronLeft} /></button>
-                    <button onClick={nextSlide}><FontAwesomeIcon icon={faChevronRight} /></button>
+                    <button  onClick={prevSlide}><FontAwesomeIcon className="prev" icon={faChevronLeft} /></button>
+                    <button onClick={nextSlide}><FontAwesomeIcon className="next" icon={faChevronRight} /></button>
                 </div>
                 <div className='carousel-dots'>
                     {images.map((_, index) => (

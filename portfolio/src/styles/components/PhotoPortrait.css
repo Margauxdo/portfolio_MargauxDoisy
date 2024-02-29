@@ -11,4 +11,35 @@
       filter: blur(0px); /* Fin de l'animation, netteté totale (0px de flou) */
     }
   }
+
+
+  @media screen and (max-width: 1400px) and (min-width: 1024px){
+
+  }
+  @media screen and (max-width: 1023px) and (min-width: 900px){
+      
+  }
+  @media screen and (max-width: 899px) and (min-width: 768px){
+      .portrait img{
+        max-width: 250px;
+        margin-left: 50px;
+      }
+  }
+  @media screen and (max-width: 767px) and (min-width: 600px){
+      .portrait img{
+        max-width: 300px;
+        margin-left: 100px;
+      }
+  }
+  @media screen and (max-width: 599px) and (min-width: 375px){
+    .portrait img{
+      max-width: 300px;
+      margin-left: 10px;
+    }
+  }
+  
+  @media screen and (max-width: 374px) {
+      
+  }
+  
   

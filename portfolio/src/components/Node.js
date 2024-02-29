@@ -1,5 +1,5 @@
 import React from 'react';
-import '../styles/components/Node.css';
+
 
 const Node = () => {
     return (

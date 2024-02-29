@@ -38,7 +38,7 @@ li{
     max-width: 2400px;
     width: 100%;
     margin: auto;
-    background: #ffd4ca;
+    background: #000;
     padding-top: 50px;
     padding-bottom: 30px;
     border-top: #F18971 8px solid;
@@ -52,8 +52,70 @@ li{
     font-size: 20px;
     font-style: inherit;
     font-weight: 500;
-    color:#0D3653;
+    color:hsla(180,51.4%,51.6%,1)
 }
 .list-contact a:hover{
     color:#008A77;
+}
+
+
+@media screen and (max-width: 1400px) and (min-width: 1024px){
+    .footer{
+        max-width: 1400px;
+        padding-top: 20px;
+        padding-bottom: 10px;
+    
+    }
+    .containFooter{
+        max-width: 1000px;
+    }
+    .list-contact a{
+        font-size: 16px;
+    }
+}
+@media screen and (max-width: 1023px) and (min-width: 900px){
+    .list-contact{
+        position: relative;
+        right: 80px;
+        display: block;
+    }
+}
+@media screen and (max-width: 899px) and (min-width: 768px){
+    .list-contact a{
+        font-size: 16px;
+        position: relative;
+        left: 180px;
+    }
+}
+@media screen and (max-width: 767px) and (min-width: 600px){
+    .footer{
+        max-width: 600px;;
+    }
+    .reseaux-sociaux{
+        max-width: 200px;
+    }
+    .list-contact{
+        position: relative;
+    right: 0px;
+    }
+}
+@media screen and (max-width: 599px) and (min-width: 375px){
+    .footer{
+        max-width: 599px;
+    }
+   
+    .reseaux-sociaux{
+        max-width: 120px;
+    }
+    .list-contact{
+        position: relative;
+    right: 0px;
+    }
+    .list-contact a{
+        font-size:14px;
+    }
+}
+
+@media screen and (max-width: 374px) {
+    
 }

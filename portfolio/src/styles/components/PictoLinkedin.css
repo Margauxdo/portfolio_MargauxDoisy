@@ -1,3 +1,29 @@
-pictoLinkedin img{
+.pictoLinkedin img{
     max-width: 60px;
+}
+
+@media screen and (max-width: 1400px) and (min-width: 1024px){
+    .pictoLinkedin img{
+        max-width: 50px;
+    }
+}
+@media screen and (max-width: 1023px) and (min-width: 900px){
+    
+}
+@media screen and (max-width: 899px) and (min-width: 768px){
+    
+}
+@media screen and (max-width: 767px) and (min-width: 600px){
+    .pictoLinkedin img{
+        max-width: 40px;
+    }
+}
+@media screen and (max-width: 599px) and (min-width: 375px){
+    .pictoLinkedin img{
+        max-width: 40px;
+    }
+}
+
+@media screen and (max-width: 374px) {
+    
 }

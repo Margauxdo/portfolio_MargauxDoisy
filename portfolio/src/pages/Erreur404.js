@@ -3,7 +3,6 @@ import '../styles/pages/Erreur404.css';
 import { Link } from 'react-router-dom';
 import Loader from '../components/Loader';
 import Logo from '../components/Logo';
-import Naviguation from '../components/Naviguation';
 import Footer from '../components/Footer';
 
 
@@ -19,9 +18,8 @@ const Erreur404 = () => {
 
             
             <div className="progressBar"></div>
-            <div className='header'>
+            <div className='header-erreur'>
                 <Logo/>
-                <Naviguation/>
             </div>
             
             <div className="content-erreur">

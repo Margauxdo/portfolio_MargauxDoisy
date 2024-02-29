@@ -104,3 +104,198 @@
     height: 18px;
   }
   
+
+
+  @media screen and (max-width: 1400px) and (min-width: 1024px){
+    .containSite h2{
+        font-size: 45px;
+    }
+    .overlay span{
+        font-size: 20px;
+    }
+    .containSite p{
+        font-size: 18px;
+    }
+    .carousel-buttons svg{
+        font-size: 55px;
+    }
+    .carousel-buttons{
+        bottom: 600px;
+    }
+    .carousel-dots{
+        bottom: 300px;
+    }
+    
+  }
+  @media screen and (max-width: 1023px) and (min-width: 900px){
+     .prev{
+        max-width: 100px;
+        position: relative;
+        top: 50px;
+        right: 150px;
+      }
+       .next{
+        max-width: 100px;
+        position: relative;
+        top: 50px;
+        left: 150px;
+      }
+      .containSite h2{
+        font-size: 45px;
+      }
+      .containSite{
+        top: 30px;
+      }
+      .overlay span{
+        font-size: 20px;
+      }
+      .carousel-dots span{
+        width: 10px;
+        height: 10px;
+      }
+      .carousel-dots span.active{
+        width: 13px;
+        height: 13px;
+      }
+      .portfolioContent{
+        height: 650px;
+      }
+  }
+  @media screen and (max-width: 899px) and (min-width: 768px){
+    #portfolio{
+        height:800px
+    }
+    .containSite{
+        top: 20px;
+    }
+      .containSite p{
+        font-size: 16px;
+      }
+      .containSite h2{
+        font-size: 40px;
+      }
+      .overlay span{
+        font-size: 20px;
+      }
+      .carousel-dots span{
+        width: 8px;
+        height: 8px;
+      }
+      .carousel-dots span.active{
+        width: 10px;
+        height: 10px;
+      }
+      .prev{
+        max-width: 80px;
+        position: relative;
+        top: 50px;
+        right: 130px;
+      }
+      .next{
+        max-width: 80px;
+        position: relative;
+        top: 50px;
+        left: 130px;
+      }
+  }
+  @media screen and (max-width: 767px) and (min-width: 600px){
+    .prev{
+      max-width: 80px;
+      position: relative;
+      top: 0px;
+      right: 80px;
+    }
+    .next{
+      max-width: 80px;
+      position: relative;
+      top: 0px;
+      left: 80px;
+    }
+    .portfolioContent img{
+      max-width: 350px;
+      position: relative;
+      bottom: 50px;
+    }
+    .carousel-dots span.active{
+      width: 10px;
+      height: 10px;
+    }
+    .carousel-dots span{
+      width: 7px;
+      height: 7px;
+    }
+    .carousel-dots{
+      bottom: 500px;
+    }
+    .containSite h2{
+      font-size: 35px;
+    }
+    .overlay span{
+      font-size: 18px;
+    }
+    .containSite p{
+      font-size: 15px;
+    }
+    .containSite{
+      position: relative;
+    top:-100px;
+  
+    }
+    #portfolio{
+      height: 670px;
+    border-radius: 30px;
+    }
+   
+  }
+  @media screen and (max-width: 599px) and (min-width: 375){
+    .prev{
+      max-width: 80px;
+      position: relative;
+      top: 0px;
+      right: 80px;
+    }
+    .next{
+      max-width: 80px;
+      position: relative;
+      top: 0px;
+      left: 80px;
+    }
+    .portfolioContent img{
+      max-width: 350px;
+      position: relative;
+      bottom: 100px;
+    }
+    .carousel-dots span.active{
+      width: 10px;
+      height: 10px;
+    }
+    .carousel-dots span{
+      width: 7px;
+      height: 7px;
+    }
+    .carousel-dots{
+      bottom: 500px;
+    }
+    .containSite h2{
+      font-size: 35px;
+    }
+    .overlay span{
+      font-size: 18px;
+    }
+    .containSite p{
+      font-size: 13px;
+    }
+    .containSite{
+      position: relative;
+    top:-100px;
+  
+    }
+    #portfolio{
+      height: 500px;
+    border-radius: 30px;
+    }
+  }
+  
+  @media screen and (max-width: 374px) {
+      
+  }

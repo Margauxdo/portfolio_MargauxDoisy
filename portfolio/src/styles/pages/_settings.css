@@ -52,7 +52,7 @@ a{
   color: #F18971;
 }
 a:hover{
-  color:#5EBDB0;
+  color:#008a77;
 }
 .progressBar {
   position: fixed;
@@ -80,16 +80,16 @@ a:hover{
 .JourNight{
   position: absolute;
   top: 50px;
-  right:100px;
+  right: 100px;
   width: 100px;
   padding: 15px;
-  border-radius: 5px;
-  border: 0px solid;
+  border-radius: 55px;
+  border: 1px solid;
   font-family: "Dancing Script", cursive;
-  font-size: 20px;
+  font-size: 30px;
   font-weight: bold;
-  background-color: #F18971;
-  color:#ededed;
+  background-color: #fff0;
+  color: #f18971;
 }
 /* Styles pour le mode jour */
 .day-mode {
@@ -102,7 +102,7 @@ a:hover{
 
 
 .day-mode .submitContact{
-  background: #5EBDB0;
+  background: #008a77;
   color: #ededed;
   box-shadow: 2px 2px 6px #8d8989;
 }
@@ -127,10 +127,23 @@ a:hover{
   color: #008A77;
 }
 .night-mode .overlay span {
-  color: #F18971;
+  color: #000;
 }
-.night-mode .AboutMe h2, .night-mode .AboutMe h3{
+.night-mode .overlay span:hover {
+  color: #fff;
+}
+.night-mode .AboutMe h2{
   color:#F18971;
+}
+.night-mode .AboutMe h3{
+  color:#ededed;
+}
+.night-mode .footer{
+  background-color: #f6f6f6;
+  border-top: #5ebdb0 8px solid;
+}
+.night-mode .list-contact a{
+  color: #0D3653;
 }
 .night-mode h1{
   color:#5EBDB0;
@@ -192,20 +205,12 @@ a:hover{
 .night-mode .portfolioMe .carousel-dots span.active {
   background-color: #ededed;
 }
-.night-mode .portfolioOnline{
-  background-color:#F18971;
-}
-.night-mode .portfolioOnline:hover{
-  background-color:#ffa38e;
-}
-.night-mode.CvOnline:hover{
-  background-color: #F18971;
-}
+
 .CvOnline{
-  background-color: #ffa38e;
+  background-color: #a8a8a8;
 }
 .CvOnline:hover{
-  background-color: #008A77;
+  background-color: #0D3653;
 }
 .night-mode .portfolioOnline a,.night-mode .portfolioOnline a:hover{
   color:#ededed;
@@ -220,4 +225,146 @@ a:hover{
   margin-bottom: 100px;
 }
 
+@media screen and (max-width: 1400px) and (min-width: 1024px){
+  *{
+    max-width: 1400px;
+  }
+  h1{
+    max-width: 1000px;
+    font-size: 55px;
+  }
+  h2{
+    font-size: 26px;
+  }
+  p{
+    font-size: 18px;
+  }
+  .header{
+    max-width: 1000px;
+  }
+  .JourNight{
+    width: 80px;
+    top: 30px;
+    right: 30px;
+  }
+}
+@media screen and (max-width: 1023px) and (min-width: 900px){
+    .JourNight svg{
+      font-size: 25px;
+    }
+    .JourNight{
+      width: 60px;
+      padding: 0px;
+      top: 40px;
+     
+    }
+    *{
+      max-width: 1023px;
+    }
+     .header, .containFooter, .headerHome{
+      max-width: 900px;
+    }
+   label{
+      font-size: 16px;
+    }
+    p{
+      font-size: 16px !important;
+    }
+    h1{
+      font-size: 50px;
+    }
+}
+@media screen and (max-width: 899px) and (min-width: 768px){
+ *{
+  max-width: 899px;
+  width:100%;
+ }
+ h1{
+  font-size: 50px;
+ }
+ p{
+  font-size: 16px;
+ }
+  .containFooter, .headerHome{
+    max-width: 768px;
+  }
+  .header{
+    max-width: 768px;
+    display: flex;
+    flex-direction: column;
+  }
+  .nav{
+    max-width: 768px;
+  }
+  .logo{
+    max-width: 899px;
+    width: 10%;
+    padding-bottom: 50px;
+  }
+  .JourNight{
+    top: 30px;
+    right: 50px;
+    width: 50px;
+    padding: 5px;
+  }
+  .JourNight svg{
+    font-size: 25px;
+  }
+}
+@media screen and (max-width: 767px) and (min-width: 600px){
+    *{
+      max-width: 767px;
+    }
+    h1{
+      font-size: 35px;
+    }
+    p{
+      font-size: 15px;
+    }
+    .header{
+      max-width: 600px;
+      display: flex;
+      flex-direction: column;
+    }
+    .JourNight svg{
+      font-size: 20px;
+    }
+    .JourNight{
+      position: absolute;
+      top: 30px;
+      right: 50px;
+      width: 60px;
+      padding: 0px;
+    }
+}
+@media screen and (max-width: 599px) and (min-width: 375px){
+  *{
+    max-width: 599px;
+  }
+  h1{
+    font-size: 35px;
+  }
+  p{
+    font-size: 15px;
+    max-width: 375px;
+  }
+  .header{
+    max-width: 600px;
+    display: flex;
+    flex-direction: column;
+  }
+  .JourNight svg{
+    font-size: 20px;
+  }
+  .JourNight{
+    position: absolute;
+    right: 20px;
+    width: 50px;
+    width: 60px;
+    padding: 0px;
+  }
+}
 
+@media screen and (max-width: 374px) and (min-width: 250px){
+    
+}

@@ -5,7 +5,7 @@ import { Link } from 'react-router-dom';
 const Homepage = () => {
     return (
         <div className='headerHome'>
-            <h1>Margaux, développeuse Front-End & passionée </h1>
+            <h1>Margaux,                                              développeuse Front-End & passionée </h1>
             <img src="./margaux-illu.png" alt="portrait illustration"/>
             <div className='mainButton'>
                 <ul>

@@ -1,5 +1,4 @@
 import React from 'react';
-
 import '../styles/pages/CVonline.css';
 import { Link } from 'react-router-dom';
 import ImgPortrait from '../components/ImgPortrait';
@@ -36,32 +35,31 @@ const CVonline = () => {
                 <div className='textSection'>
                     <div className='mainHistory'>
                         
-                    <div className='presentation'>
+                        <div className='presentation'>
                     
-                    <div className='containTitle'>
-                    <h2>Margaux Doisy</h2>
-
-    </div> 
-                    <h3>Développeuse Frontend junior </h3>
-                    <p>
-                    Passionnée par le développement web et déterminée à me perfectionner dans ce domaine,
-                     je suis animée par le désir d'apporter mes compétences et mon expertise au
-                     sein d'une entreprise.  
-                       Ayant effectué un virement à 360 degrés pour
-                        devenir Développeuse web, mon objectif est de 
-                        concevoir des solutions digitales sur mesure,
-                         parfaitement adaptées aux besoins des clients.
-                          Mon engagement et ma volonté d'apprendre sont
-                           mes meilleurs atouts pour relever les défis à
-                            venir.
-                    </p>
-                </div>
-                <div className='formation'>
+                            <div className='containTitle'>
+                                <h2>Margaux Doisy</h2>
+                            </div> 
+                            <h3>Développeuse Frontend junior </h3>
+                                <p>
+                                    Passionnée par le développement web et déterminée à me perfectionner dans ce domaine,
+                                    je suis animée par le désir d'apporter mes compétences et mon expertise au
+                                    sein d'une entreprise.  
+                                    Ayant effectué un virement à 360 degrés pour
+                                    devenir Développeuse web, mon objectif est de 
+                                    concevoir des solutions digitales sur mesure,
+                                    parfaitement adaptées aux besoins des clients.
+                                    Mon engagement et ma volonté d'apprendre sont
+                                    mes meilleurs atouts pour relever les défis à
+                                    venir.
+                                </p>
+                        </div>
+                        <div className='formation'>
                     
-                <div className='containTitle'>
-<h2>Formations</h2>
+                            <div className='containTitle'>
+                                <h2>Formations</h2>
 
-    </div> 
+                            </div> 
                     <h4>Fev 2024 - janv 2025 - Junia XP - Bachelor Développeur Informatique </h4>
                     <p> Gestion de projet et compétences transverse, réseaux et travail collaboratif,
                         développement applicatif frontend et backend, administration et exploitation des données</p>

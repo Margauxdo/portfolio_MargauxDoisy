@@ -8,13 +8,13 @@
     margin: auto;
 }
 .AboutMe h2{
-    color: #5EBDB0;
+    color: #008a77;
     font-size: 28px;
     text-transform: uppercase;
 }
 .AboutMe h3{
     font-family: "Dancing Script", cursive;
-    color: #5EBDB0;
+    color: #0D3653;
     font-size: 30px;
     text-align: center;
     padding-bottom: 45px;
@@ -38,7 +38,7 @@
     font-size: 18px;
     text-align: center;
     display: block;
-    background: #5EBDB0;
+    background: #008a77;
     color: #f6f6f6;
     box-shadow: 2px 3px 7px #a0a0a0;
 }
@@ -54,4 +54,108 @@
     max-width: 800px;
     width:100%;
     margin: auto;
+}
+
+
+@media screen and (max-width: 1400px) and (min-width: 1024px){
+    #about{
+        max-width: 1000px;
+    }
+    .portrait-img{
+        max-width: 300px;
+    }
+    .portrait-text{
+        max-width: 700px;
+        margin-left: 100px;
+    }
+    .AboutMe h3{
+        font-size: 24px;
+    }
+    .portrait-margaux button{
+        font-size: 16px;
+    }
+}
+@media screen and (max-width: 1023px) and (min-width: 900px){
+  .portrait-img{
+    max-width: 400px;
+    width: 100%;
+    margin: auto;
+    position: relative;
+    bottom: 140px;
+  }  
+  .AboutMe h3{
+    font-size: 22px;
+    max-width: 300px;
+  }
+  .portrait-margaux button{
+    max-width: 200px;
+    font-size: 14px;
+  }
+}
+@media screen and (max-width: 899px) and (min-width: 768px){
+    .AboutMe h2{
+        font-size: 25px;
+    }
+    .AboutMe h3{
+        font-size: 20px;
+        max-width: 250px;
+    }
+    .portrait-margaux button{
+        font-size: 14px;
+        max-width: 200px;
+    }
+    .portrait-img{
+        position: relative;
+        bottom: 200px;
+    }
+    .portrait-img h3{
+        padding-bottom: 50px;
+    }
+    .portrait{
+        padding-bottom: 50px;
+    }
+}
+@media screen and (max-width: 767px) and (min-width: 600px){
+    .portrait-margaux{
+        display: flex;
+    flex-direction: column;
+    }
+    .AboutMe h3{
+        font-size: 20px;
+    }
+    .AboutMe h2{
+        font-size: 20px;
+    }
+    .portrait-margaux button{
+        height: 30px;
+        border-radius: 5px;
+        border: 0px;
+        font-size: 14px;
+        position: relative;
+        bottom: 30px;
+    }
+}
+@media screen and (max-width: 599px) and (min-width: 375px){
+    .portrait-margaux{
+        display: flex;
+    flex-direction: column;
+    }
+    .AboutMe h3{
+        font-size: 16px;
+    }
+    .AboutMe h2{
+        font-size: 17px;
+    }
+    .portrait-margaux button{
+        height: 30px;
+        border-radius: 5px;
+        border: 0px;
+        font-size: 13px;
+        position: relative;
+        bottom: 30px;
+    }
+}
+
+@media screen and (max-width: 374px) {
+    
 }

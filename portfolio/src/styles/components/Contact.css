@@ -108,3 +108,96 @@ form{
     animation-delay: 1s; /* Décalage de 1 seconde pour le cinquième div */
   }
   
+
+  @media screen and (max-width: 1400px) and (min-width: 1024px){
+    .textContact{
+      margin-left: 10px;
+    }
+    .containContact{
+      max-width: 1000px;
+      padding-bottom: 0px;
+    }
+    .containRight{
+      max-width: 400px;
+    }
+    .containLeft{
+      max-width: 580px;
+    }
+    label{
+      font-size: 18px;
+    }
+    .textContact{
+      position: relative;
+    bottom: 120px;
+    margin-left: 20px;
+    padding-top: 50px;
+    max-width: 380px;
+    }
+  }
+  @media screen and (max-width: 1023px) and (min-width: 900px){
+      .containRight{
+        max-width: 350px;
+      }
+      .containLeft{
+        max-width: 400px;
+      }
+      .textContact{
+        margin-left: 0px;
+      }
+  }
+  @media screen and (max-width: 899px) and (min-width: 768px){
+      .textContact{
+        max-width: 250px;
+      }
+      label{
+        font-size: 16px;
+      }
+  }
+  @media screen and (max-width: 767px) and (min-width: 600px){
+      label{
+        font-size: 14px;
+      }
+      .submitContact{
+        font-size: 14px;
+      }
+      .textContact{
+        max-width: 200px;
+        position: relative;
+        bottom: 100px;
+        margin-left: 20px;
+        padding-top: 0px;
+      }
+      .containLeft{
+        position: relative;
+        bottom: 50px;
+      }
+  }
+  @media screen and (max-width: 599px) and (min-width: 375px){
+    label{
+      font-size: 14px;
+    }
+    .submitContact{
+      font-size: 14px;
+    }
+    .textContact{
+      max-width: 375px;
+    margin:auto;
+    padding-top: 0px;
+    }
+    .containLeft{
+      position: relative;
+      bottom: 50px;
+    }
+    .containRight{
+      max-width: 375px;
+      width: 100%;
+    }
+    .containContact{
+      flex-direction: column;
+    }
+  }
+  
+  @media screen and (max-width: 374px) {
+      
+  }
+  

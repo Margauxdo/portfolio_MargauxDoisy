@@ -1,9 +1,8 @@
 .page-container {
     display: flex;
     flex-direction: column;
-    min-height: 100vh; /* Pour s'assurer que le conteneur occupe au moins toute la hauteur de la fenêtre */
+    min-height: 100vh; 
 }
-
 .content {
     flex: 1; /* Pour que le contenu prenne l'espace disponible */
 }
@@ -12,9 +11,17 @@
     width: 100%;
     margin: auto;
     position: relative;
-    top: 200px;
+    bottom: 180px;
+    padding-bottom: 50px;
 }
-
+.header-erreur{
+    max-width: 1400px;
+    margin: auto;
+}
+.header-erreur .logo img{
+    position: relative;
+    bottom: 180px;
+}
 .footer {
     flex-shrink: 0; /* Empêche le footer de rétrécir lorsqu'il y a peu de contenu */
 }
@@ -23,7 +30,6 @@
     max-width: 1200px;
     margin: auto;
     width: 100%;
-
 }
 .Erreur404 h1{
     color: #048B9A;
@@ -97,3 +103,23 @@
     left: 130px;
 }
 
+@media screen and (max-width: 1400px) and (min-width: 1024px){
+
+    
+}
+@media screen and (max-width: 1023px) and (min-width: 900px){
+    
+}
+@media screen and (max-width: 899px) and (min-width: 768px){
+    
+}
+@media screen and (max-width: 767px) and (min-width: 600px){
+    
+}
+@media screen and (max-width: 599px) and (min-width: 375px){
+    
+}
+
+@media screen and (max-width: 374px) {
+    
+}

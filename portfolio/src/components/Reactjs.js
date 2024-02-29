@@ -1,5 +1,5 @@
 import React from 'react';
-import '../styles/components/Reactjs.css';
+
 
 const Reactjs = () => {
     return (

@@ -3,3 +3,37 @@
     width: 100%;
     margin: auto;
 }
+
+@media screen and (max-width: 1400px) and (min-width: 1024px){
+    .logo img{
+        max-width: 80px;
+    }
+}
+@media screen and (max-width: 1023px) and (min-width: 900px){
+    
+}
+@media screen and (max-width: 899px) and (min-width: 768px){
+    
+}
+@media screen and (max-width: 767px) and (min-width: 600px){
+    .header .logo img{
+        max-width: 80px;
+        margin-left: 30%;
+    }
+    .logo{
+        width: 50%;
+    }
+}
+@media screen and (max-width: 599px) and (min-width: 375px){
+    .header .logo img{
+        max-width: 80px;
+        margin-left: 30%;
+    }
+    .logo{
+        width: 50%;
+    }
+}
+
+@media screen and (max-width: 374px) {
+    
+}
