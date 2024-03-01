@@ -99,7 +99,7 @@ li{
     right: 0px;
     }
 }
-@media screen and (max-width: 599px) and (min-width: 375px){
+@media screen and (max-width: 599px) {
     .footer{
         max-width: 599px;
     }
@@ -116,6 +116,4 @@ li{
     }
 }
 
-@media screen and (max-width: 374px) {
-    
-}
+

@@ -135,7 +135,7 @@
         bottom: 30px;
     }
 }
-@media screen and (max-width: 599px) and (min-width: 375px){
+@media screen and (max-width: 599px) {
     .portrait-margaux{
         display: flex;
     flex-direction: column;
@@ -156,6 +156,4 @@
     }
 }
 
-@media screen and (max-width: 374px) {
-    
-}
+

@@ -172,7 +172,7 @@ form{
         bottom: 50px;
       }
   }
-  @media screen and (max-width: 599px) and (min-width: 375px){
+  @media screen and (max-width: 599px) {
     label{
       font-size: 14px;
     }
@@ -197,7 +197,4 @@ form{
     }
   }
   
-  @media screen and (max-width: 374px) {
-      
-  }
-  
+ 

@@ -49,15 +49,13 @@ li{
         font-size: 18px;
     }
 }
-@media screen and (max-width: 599px) and (min-width: 375px){
+@media screen and (max-width: 599px) {
     .nav{
         max-width: 375px;
     }
     .nav a{
-        font-size: 15px;
+        font-size: 14px;
     }
 }
 
-@media screen and (max-width: 374px) {
-    
-}
+

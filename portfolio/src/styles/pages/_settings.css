@@ -337,7 +337,7 @@ a:hover{
       padding: 0px;
     }
 }
-@media screen and (max-width: 599px) and (min-width: 375px){
+@media screen and (max-width: 599px) {
   *{
     max-width: 599px;
   }
@@ -365,6 +365,4 @@ a:hover{
   }
 }
 
-@media screen and (max-width: 374px) and (min-width: 250px){
-    
-}
+

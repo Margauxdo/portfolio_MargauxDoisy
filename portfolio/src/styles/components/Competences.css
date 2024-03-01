@@ -81,7 +81,7 @@ li {
     }
         
 }
-@media screen and (max-width: 599px) and (min-width: 375px){
+@media screen and (max-width: 599px) {
     .skills li img{
         width: 40px;
     }
@@ -93,7 +93,5 @@ li {
     }
 }
 
-@media screen and (max-width: 374px) {
-    
-}
+
 
