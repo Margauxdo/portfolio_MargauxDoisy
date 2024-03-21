@@ -205,21 +205,22 @@
 
     @media screen and (max-width: 599px) {
         .homepage h1{
-            font-size: 30px;
-            max-width: 120px;
-            border-top: 0px;
+            font-size: 25px;
+            max-width: 375px;
+            width: 100%;
+            margin: auto;
             text-shadow: none;
             color: #0D3653;
             text-transform: capitalize;
             position: relative;
-            top: 100px;
-            left: 150px;
-            text-align: justify;
+            top: 350px;
+            left: 80px;
+            text-align: center;;
             }
             .homepage img{
-                width: 150px;
+                width: 200px;
                 position: absolute;
-                right: 80px;
+                right: 100px;
                 top: 120px;
             }
             .homepage button{
@@ -229,18 +230,21 @@
                 font-size: 13px;
             }
             .mainButton{
-                max-width: 600px;
-                position: relative;
-                top: 80px;
-                right: 0px;
+                max-width: 375px;
+            width: 100%;
+            position: relative;
+            top: 350px;
+            right: 0px;
             }
             .homepage{
                 max-width: 599px;
             position: relative;
-            bottom: 180px;
+            bottom: 90px;
             right: 100px;
-            height: 420px;
+            height: 550px;
             border-radius: 30px;
+            width: 100%;
+            margin: auto;
             }
             .mainButton ul{
                     display: flex;
@@ -248,6 +252,9 @@
                 margin-top: 20px;
                 margin-bottom: 20px;
                 flex-direction: column;
+                }
+                .homepage .headerHome{
+                    display: flow-root;
                 }
     }
     

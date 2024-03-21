@@ -91,6 +91,12 @@ li {
     .bloc-ul{
         padding: 0px;
     }
+    .skills{
+        max-width: 375px;
+        width:100%;
+        position: relative;
+        top: 160px;
+    }
 }
 
 

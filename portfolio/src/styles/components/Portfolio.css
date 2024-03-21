@@ -274,7 +274,7 @@
     }
     .carousel-dots{
       position: relative;
-    bottom: 420px;
+    bottom: 390px;
     }
     .containSite{
       position: relative;
@@ -288,6 +288,17 @@
     }
     .containSite p{
       font-size: 14px;
+    }
+    .carousel-buttons button{
+      background: none;
+      border: 0px;
+      width: 0px;
+    }
+    .portfolioMe h1{
+      border-top: 1px solid #f18971;
+    text-shadow: none;
+    color: #f18971;
+    padding-top: 0px;
     }
   }
     

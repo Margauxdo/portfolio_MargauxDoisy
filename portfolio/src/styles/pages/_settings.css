@@ -343,6 +343,7 @@ a:hover{
   }
   h1{
     font-size: 35px;
+    max-width: 375px;
   }
   p{
     font-size: 15px;
@@ -362,6 +363,23 @@ a:hover{
     width: 50px;
     width: 60px;
     padding: 0px;
+  }
+  .night-mode .homepage{
+    background: linear-gradient(281deg, #87ffef, #000000d6);
+    max-width: 599px;
+    width: 100%;
+    position: relative;
+    left: 20px;
+    border-radius: 0px;
+  }
+  .night-mode #portfolio{
+    background: linear-gradient(281deg, hsla(0, 0%, 0%, 0.1), hsl(0deg 0% 0% / 0%));
+  }
+  .night-mode .portfolioMe h1{
+    border-top: 1px solid #5ebdb0;
+  text-shadow: none;
+  color: #5ebdb0;
+  padding-top: 0px;
   }
 }
 

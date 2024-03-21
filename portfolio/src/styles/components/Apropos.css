@@ -142,9 +142,11 @@
     }
     .AboutMe h3{
         font-size: 16px;
+        max-width: 375px;
     }
     .AboutMe h2{
         font-size: 17px;
+        text-align: center;
     }
     .portrait-margaux button{
         height: 30px;
