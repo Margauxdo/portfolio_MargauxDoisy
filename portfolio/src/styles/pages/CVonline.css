@@ -165,17 +165,54 @@
 }
 
 @media screen and (max-width: 1400px) and (min-width: 1024px){
+    
+   .mainCV img{
+    max-width: 600px;
+    width: 100%;
+   }
+ .mainCV .logo {
+    position: absolute;
+    right: 800px;
+    top: 30px;
+    max-width: 80px;
+    z-index: 3900;
+}
+.textSection {
+    margin: auto;
+    position: relative;
+    width: 400px;
+    left: 300px;
+    top: 200px;
+}
+.presentation .containTitle h2 {
+    font-size: 60px;
+    font-family: "Dancing Script", cursive;
+    text-align: end;
+    margin-bottom: 0px;
+    color: #0D3653;
+    margin-top: 50px;
+}
+.presentation h3{
+    font-size: 38px;
+}
+.formation h4{
+    font-size: 19px;
+}
+.mainHistory h2{
+    font-size: 38px;
+}
+.competences li {
+    max-width: 70px;
+}
 
 }
 @media screen and (max-width: 1023px) and (min-width: 900px){
     
 }
-@media screen and (max-width: 899px) and (min-width: 768px){
+@media screen and (max-width: 899px) and (min-width: 600px){
     
 }
-@media screen and (max-width: 767px) and (min-width: 600px){
-    
-}
+
 @media screen and (max-width: 599px) {
     
 }
