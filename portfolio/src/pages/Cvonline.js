@@ -1,19 +1,10 @@
 import React from 'react';
 import '../styles/pages/CVonline.css';
 import { Link } from 'react-router-dom';
-import ImgPortrait from '../components/ImgPortrait';
-import Github from '../components/Github';
-import CSS from '../components/CSS';
-import Node from '../components/Node';
-import MongoDB from '../components/MongoDB';
-import Javascript from '../components/Javascript';
-import Wordpress from '../components/Wordpress';
-import GoogleAnalytics from '../components/GoogleAnalytics';
-import Bootstraps from '../components/Bootstraps';
-import Photoshop from '../components/Photoshop';
-import Illustrator from '../components/Illustrator';
-import Reactjs from '../components/Reactjs';
+
+
 import Logo from '../components/Logo';
+import Menu from '../components/Menu';
 
 
 
@@ -25,11 +16,12 @@ const CVonline = () => {
 
             <div className="progressBar"></div>
             <Logo/>
+            <Menu/>
             
             <div className='containAPropos'>
                 <div className='imageSection'>
                     <div className='headerHistory'>
-                        <ImgPortrait/>
+                        
                     </div>
                 </div>
                 <div className='textSection'>
@@ -113,23 +105,14 @@ const CVonline = () => {
             <div className='listService'>
                 <h4 >Front End & Back End</h4>
                 <ul>
-                <li><CSS/></li>
-                <li><Javascript/></li>
-                <li><Reactjs/></li>
-                <li><Bootstraps/></li>
-                <li><Node/></li>
-                <li><MongoDB/></li>
+
 
             </ul>
             </div>
             <div className='listUsers'>
             <h4>CMS & logiciels graphiques</h4>
             <ul>
-                <li><Github/></li>
-                <li><Wordpress/></li>
-                <li><GoogleAnalytics/></li>
-                <li><Photoshop/></li>
-                <li><Illustrator/></li>
+
             </ul>
             </div>
             </div>

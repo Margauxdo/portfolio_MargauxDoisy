@@ -1,0 +1,36 @@
+.nav{
+    max-width: 2200px;
+    width: 100%;
+    display: flex;
+    background-color: black;
+    border-bottom: 1px solid hsla(252,13%,46%,1);
+}
+.logoheader{
+    max-width: 1000px;
+    margin: 0px;
+    width: 100%;
+}
+.menuheader{
+    max-width: 1200px;
+    margin: 0px;
+    width: 100%;
+}
+.header{
+    background-color: black;
+    display: flex;
+}
+
+.headerText{
+    max-width: 700px;
+    width: 100%;
+    margin: auto;
+}
+.titre{
+    padding-top: 400px;
+    padding-left: 50px;
+}
+.headerimg{
+    max-width: 1400px;
+    width: 100%;
+    margin: auto;
+}

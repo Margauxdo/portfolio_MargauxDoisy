@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import'../styles/components/Apropos.css';
+
 import PhotoPortrait from './PhotoPortrait';
 
 

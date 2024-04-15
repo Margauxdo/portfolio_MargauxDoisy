@@ -5,7 +5,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faMoon, faSun } from '@fortawesome/free-solid-svg-icons';
 import Home from "./pages/Home";
 import CVonline from "./pages/Cvonline";
-import Portfolio from "./components/Portfolio";
+
 
 
 
@@ -53,7 +53,7 @@ function App() {
           <Route path="/" element={<Home />} />
           <Route path="/cvonline" element={<CVonline />} />
           <Route path="*" element={<Erreur404 />} />
-          <Route path="/portfolio" element={<Portfolio/>} />
+          
         </Routes>
       </BrowserRouter>
       <button className="JourNight" onClick={toggleMode}>

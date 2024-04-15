@@ -1,0 +1,11 @@
+.naviguation ul{
+    display: flex;
+    list-style: none;
+    margin: 0px;
+    padding-top: 80px;
+}
+li {
+    color: hsl(11deg 76.79% 68.39%);
+    font-weight: 300;
+    font-size: 26px;
+}

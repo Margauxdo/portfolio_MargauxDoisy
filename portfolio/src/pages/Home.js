@@ -1,42 +1,44 @@
 import React from 'react';
+import ImgBW from '../components/ImgBW';
+import AnimationText from '../components/AnimationText';
+import '../styles/pages/Home.css';
 import Logo from '../components/Logo';
-import Naviguation from '../components/Naviguation';
-import Footer from '../components/Footer';
-import Contact from '../components/Contact';
-import Apropos from '../components/Apropos';
-import Competences from '../components/Competences';
-import Portfolio from '../components/Portfolio';
-import Homepage from '../components/Homepage';
+import Menu from '../components/Menu';
 
 const Home = () => {
     return (
         <div>
+            <div className='nav'>
+                <div className='logoheader'>
+                    <Logo/>
+                </div>
+                <div className='menuheader'>
+                    <Menu/>
+
+                </div>
+
+            </div>
             <div className='header'>
-                <Logo/>
-                <Naviguation/>
-            </div>
-            <div className='homepage'> 
-                <Homepage/>
+                <div className='headerText'>
+                    <div className='titre'>
+                        <h1> Margaux Doisy</h1>
+                        <h1> Je suis Développeuse web </h1>
+                    </div>
+                    <div className='animation'>
+                        
+                    </div>
+                    <AnimationText/>
+                </div>
+                <div className='headerimg'>
+                <ImgBW/>
+                </div>
+                
 
-            </div>
-            <div id='techno'> 
-                <Competences/>
-            </div>
-            <div id='about'> 
-                <Apropos/>
-            </div>
-            <div id='portfolio'> 
-                <Portfolio/>
-            </div>
+                
 
-            <div id="contact">
-                <Contact/>
-            </div>
-
-            <div className='footer'>
-                <Footer/>
             </div>
         </div>
+        
     );
 };
 

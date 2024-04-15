@@ -1,0 +1,9 @@
+.header h4{
+    color: hsl(11deg 100% 84.91%);
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 200;
+    padding-left: 50px;
+    padding-top: 50px;
+    text-transform: capitalize;
+}
