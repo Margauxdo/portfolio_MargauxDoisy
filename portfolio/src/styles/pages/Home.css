@@ -34,3 +34,27 @@
     width: 100%;
     margin: auto;
 }
+.buttonHeader{
+    max-width: 600px;
+    width: 100%;
+    margin: auto;
+    display: flex;
+    padding-top:150px;
+}
+.buttonHeader button{
+    max-width: 250px;
+    width: 100%;
+    margin: auto;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 1px 4px 17px #f2f2f25c;
+    background-color: hsl(11deg 76.79% 68.39%);
+    border: 0px solid ;
+    font-size: 18px;
+    font-weight: 500;
+    text-transform:capitalize;
+}
+.buttonHeader button:active{
+    background-color: #f2f2f25c;
+    color:white;
+}
