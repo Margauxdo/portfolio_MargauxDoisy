@@ -75,4 +75,5 @@
 .webdesign.clicked::before,
 .developpement.clicked::before {
     width: 350px;
+    left:200px;
 }

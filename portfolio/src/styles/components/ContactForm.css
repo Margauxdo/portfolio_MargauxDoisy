@@ -1,0 +1,48 @@
+form{
+    max-width: 1200px;
+    width: 100%;
+    border: 1px solid hsla(11, 100%, 62.2%, 1);
+    padding: 50px;
+    margin-top: 60px;
+    margin-bottom: 40px;
+    box-shadow: 4px 4px 6px hsl(11deg 76.79% 68.39% );
+}
+label{
+    color: hsla(11, 100%, 62.2%, 1);
+    font-family: "Bodoni Moda", serif;
+    font-weight: 700;
+    font-size: 20px;
+}
+input{
+    border: 0.5px solid hsla(11, 100%, 62.2%, 1);
+    height: 30px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+textarea{
+    border: 0.5px solid hsla(11, 100%, 62.2%, 1);
+    height: 80px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+
+}
+button{
+    color: white;
+    background: hsla(11, 100%, 62.2%, 1);
+    border: 0px;
+    height: 30px;
+    font-size: 18px;
+    max-width: 200px;
+    text-align: center;
+    position: relative;
+    left: 900px;
+    top: 15px;
+    box-shadow: 4px 4px 8px #b6b6b6;
+    border-radius: 7px;
+}
+button:active{
+    border: 2px solid hsla(11, 100%, 62.2%, 1);
+    background-color: transparent;
+    color:hsla(11, 100%, 62.2%, 1);
+    font-weight: 700;
+}

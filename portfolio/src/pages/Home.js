@@ -6,6 +6,7 @@ import Logo from '../components/Logo';
 import Menu from '../components/Menu';
 import Footer from '../components/Footer';
 import Services from '../components/Services';
+import ContactForm from '../components/ContactForm';
 
 const Home = () => {
     return (
@@ -52,7 +53,15 @@ const Home = () => {
 
             </div>
             <div className='contactMe'>
-
+            <div className='titre'>
+           
+                    
+           
+            <div className='titreh2'>
+                    <h2>Contactez-moi</h2>
+            </div>
+            </div>
+                    <ContactForm/>
             </div>
             <div className='footer'>
                 <Footer/>
