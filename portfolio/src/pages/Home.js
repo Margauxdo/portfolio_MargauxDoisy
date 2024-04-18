@@ -50,7 +50,26 @@ const Home = () => {
             </div>
 
             <div className='monHistoire'>
-
+            <div className='titre'>
+                <div className='annotationtitre'>
+                    <div className='tirettitre'></div>
+                    <div className='pointtitre'></div>
+                    <div className='annotation'>
+                        <h4> Qui suis-je ?</h4>
+                    </div>
+                </div>
+                <div className='titreh2'>
+                    <h2>Mon histoire</h2>
+                </div>
+            </div>
+            <div className='containHistory'>
+                <div className='imgApropos'>
+                    <img src='/margaux-illu.png' alt='portrait margaux'/>
+                </div>
+                <div className='textApropos'>
+                    
+                </div>
+            </div>
             </div>
             <div className='contactMe'>
             <div className='titre'>
