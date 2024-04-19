@@ -3,17 +3,15 @@ import { Link } from 'react-router-dom';
 import '../styles/components/Apropos.css';
 
 
-
 const Apropos = () => {
     return (
         <div className='AboutMe'>
 <h3> " Je vous aide à concevoir un site web ou une application mobile, en recherchant des solutions digitales adaptés a votre besoin "</h3>
             <div className='portrait-margaux'>
-            
-            <div className='portrait-img'>
+       
+            <div className='portrait-img zoom'>
                 
-                <img src="/margaux-illu.png" alt="portrait margaux"/>
-           
+                <img src="/presentationMargaux-fd.png" alt="margaux"/>
                 
             </div>
             <div className='portrait-text'>

@@ -5,6 +5,7 @@ const Menu = () => {
     return (
         <div className='naviguation'>
             <ul>
+            
                 <li>Projets</li>
                 <li>Parcours</li>
                 <li>Experiences</li>

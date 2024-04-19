@@ -1,6 +1,9 @@
 import React from 'react';
 import '../styles/components/Footer.css';
 import Logo from './Logo';
+import { Link } from 'react-router-dom';
+import Github from './Github';
+import Linkedin from './Linkedin';
 
 const Footer = () => {
     return (
@@ -9,10 +12,12 @@ const Footer = () => {
                 <Logo/>
             </div>
             <div className='textfooter'>
-                <a href='/'> Télécharger mon CV</a>
+            <Link to="/cvonline">
+                    <p>Accédez à mon CV en ligne</p>
+                </Link>
                 <ul className='listReseaux'>
-                    <li></li>
-                    <li></li>
+                    <li><Github/></li>
+                    <li><Linkedin/></li>
                     <li></li>
                 </ul>
             </div>

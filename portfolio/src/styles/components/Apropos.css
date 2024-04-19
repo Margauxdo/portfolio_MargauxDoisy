@@ -3,6 +3,7 @@
     vertical-align: text-top;
     text-align: center;
     font-weight: 300;
+    font-size: 20px;
 }
 .portrait-text{
     max-width: 800px;
@@ -12,9 +13,9 @@
 }
 .portrait-text p{
     color: #bebebe;
-    max-width: 800px;
+    max-width: 1400px;
     text-align: justify;
-    font-size: 18px;
+    font-size: 15px;
     width: 100%;
     margin: 0px;
     padding-top: 20px;
@@ -22,11 +23,19 @@
 
 .portrait-img img{
     max-width: 400px;
+    position: relative;
+    bottom:50px
 }
 .portrait-img{
-    max-width: 400px;
+    max-width: 800px;
     width: 100%;
-    margin: auto;
+    margin: 0px;
+    
+}
+.portrait-img img{
+    max-width: 800px;
+
+    
 }
 .portrait-margaux{
     display: flex;
@@ -34,3 +43,39 @@
     width: 100%;
     margin: auto;
 }
+.buttonCv{
+    width: 250px;
+    height: 50px;
+    font-size: 14px;
+    background: hsl(11deg 76.79% 68.39%);
+    border: 0px solid;
+    border-radius: 10px;
+    position: relative;
+    bottom: 50px;
+    left: 1300px;
+    color: white;
+    font-weight: 400;
+    box-shadow: 2px 4px 4px #656565;
+}
+.buttonCv:active{
+    background-color: transparent;
+    border:2px solid hsl(11deg 76.79% 68.39%);
+    color:hsl(11deg 76.79% 68.39%);
+}
+@keyframes zoomAnimation {
+    0% {
+      transform: scale(0); 
+    }
+    50% {
+      transform: scale(1.1); 
+    }
+    100% {
+      transform: scale(0.5); 
+    }
+  }
+  
+  .zoom {
+    animation: zoomAnimation 1s ease-in-out;
+  }
+  
+  
