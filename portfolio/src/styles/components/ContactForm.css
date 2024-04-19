@@ -26,7 +26,7 @@ textarea{
     padding-bottom: 5px;
 
 }
-button{
+Form button{
     color: white;
     background: hsla(11, 100%, 62.2%, 1);
     border: 0px;
@@ -40,7 +40,7 @@ button{
     box-shadow: 4px 4px 8px #b6b6b6;
     border-radius: 7px;
 }
-button:active{
+ Form button:active{
     border: 2px solid hsla(11, 100%, 62.2%, 1);
     background-color: transparent;
     color:hsla(11, 100%, 62.2%, 1);

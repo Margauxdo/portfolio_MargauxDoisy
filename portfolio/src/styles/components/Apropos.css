@@ -1,0 +1,36 @@
+.AboutMe h3{
+    color: hsl(11deg 76.79% 68.39%);
+    vertical-align: text-top;
+    text-align: center;
+    font-weight: 300;
+}
+.portrait-text{
+    max-width: 800px;
+    width: 100%;
+    margin: 0px;
+    padding-top: 50px;
+}
+.portrait-text p{
+    color: #bebebe;
+    max-width: 800px;
+    text-align: justify;
+    font-size: 18px;
+    width: 100%;
+    margin: 0px;
+    padding-top: 20px;
+}
+
+.portrait-img img{
+    max-width: 400px;
+}
+.portrait-img{
+    max-width: 400px;
+    width: 100%;
+    margin: auto;
+}
+.portrait-margaux{
+    display: flex;
+    max-width: 1800px;
+    width: 100%;
+    margin: auto;
+}

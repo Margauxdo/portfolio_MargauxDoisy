@@ -14,7 +14,7 @@ h1{
   color: hsl(11deg 76.79% 68.39%);
 }
 h2{
-  font-size: 48px;
+  font-size: 32px;
     text-align: center;
     text-transform: capitalize;
     font-style: italic;
@@ -24,7 +24,7 @@ h4{
     width: 100%;
     margin: auto;
     color: hsla(11, 100%, 62.2%, 1);
-    font-size: 25px;
+    font-size: 22px;
     text-transform: uppercase;
 }
 h3{

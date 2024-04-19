@@ -7,6 +7,7 @@ import Menu from '../components/Menu';
 import Footer from '../components/Footer';
 import Services from '../components/Services';
 import ContactForm from '../components/ContactForm';
+import Apropos from '../components/Apropos';
 
 const Home = () => {
     return (
@@ -50,6 +51,8 @@ const Home = () => {
             </div>
 
             <div className='monHistoire'>
+            
+            <div className='containHistory'>
             <div className='titre'>
                 <div className='annotationtitre'>
                     <div className='tirettitre'></div>
@@ -62,13 +65,7 @@ const Home = () => {
                     <h2>Mon histoire</h2>
                 </div>
             </div>
-            <div className='containHistory'>
-                <div className='imgApropos'>
-                    <img src='/margaux-illu.png' alt='portrait margaux'/>
-                </div>
-                <div className='textApropos'>
-                    
-                </div>
+                <Apropos/>
             </div>
             </div>
             <div className='contactMe'>

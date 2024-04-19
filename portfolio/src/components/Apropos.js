@@ -1,26 +1,23 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import '../styles/components/Apropos.css';
 
-import PhotoPortrait from './PhotoPortrait';
 
 
 const Apropos = () => {
     return (
         <div className='AboutMe'>
-            <h1>Mon parcours</h1>
-            
-            
+<h3> " Je vous aide à concevoir un site web ou une application mobile, en recherchant des solutions digitales adaptés a votre besoin "</h3>
             <div className='portrait-margaux'>
+            
             <div className='portrait-img'>
-                <PhotoPortrait/>
-                <h3> " Je vous aide à concevoir un site web ou une application mobile, en recherchant des solutions digitales adaptés au besoin du clients "</h3>
+                
+                <img src="/margaux-illu.png" alt="portrait margaux"/>
            
-                <Link to="/cvonline">
-                    <button className='buttonCv'>Accédez à mon CV en ligne</button>
-                </Link>
+                
             </div>
             <div className='portrait-text'>
-            <h2>Développeuse Frontend et passioné</h2>
+            
              <p>
                     Mon parcours, marqué par une soif de connaissances et une détermination sans faille, témoigne d'une aventure riche en découvertes 
                     et en défis.</p>
@@ -42,8 +39,13 @@ const Apropos = () => {
                     l'humanité se conjuguent pour créer un monde meilleur.
 
                     </p>
+
+                    
             </div>
             </div>
+            <Link to="/cvonline">
+                    <button className='buttonCv'>Accédez à mon CV en ligne</button>
+                </Link>
         </div>
     );
 };
