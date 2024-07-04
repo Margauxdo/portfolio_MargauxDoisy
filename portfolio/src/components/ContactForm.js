@@ -64,7 +64,7 @@ const ContactForm = () => {
 
   return (
     <div className="mainContact">
-      <Logo/>
+    
       
     
 
