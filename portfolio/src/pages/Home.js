@@ -8,6 +8,7 @@ import Footer from '../components/Footer';
 import Services from '../components/Services';
 import ContactForm from '../components/ContactForm';
 import Apropos from '../components/Apropos';
+import { Link } from 'react-router-dom';
 
 const Home = () => {
     return (
@@ -34,8 +35,8 @@ const Home = () => {
                     </div>
                     <AnimationText/>
                     <div className='buttonHeader'>
-                        <button className='cvOnline' href='./Cvonline.js' >Accéder à mon CV</button>
-                        <button className='contactme'>Contactez-moi</button>
+                        <button className='CVOnline' ><Link to="/cvonline">  Accéder à mon CV</Link></button>
+                        <button className='contactme'><Link to="/contact">Contactez-moi </Link></button>
                     </div>
                 </div>
                 <div className='headerimg'>

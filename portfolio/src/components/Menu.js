@@ -1,4 +1,6 @@
 import React from 'react';
+import '../components/Apropos';
+import { Link } from 'react-router-dom';
 import '../styles/components/Menu.css';
 
 const Menu = () => {
@@ -7,9 +9,10 @@ const Menu = () => {
             <ul>
             
                 <li>Projets</li>
-                <li>Parcours</li>
-                <li>Experiences</li>
-                <li>Contact</li>
+                <li><Link to="/monHistoire">Mon histoire</Link></li>
+                <li><Link to="/cvonline"> Mon parcours</Link></li>
+                <li><Link to="/contact">Contact </Link></li>
+                
             </ul>
         </div>
     );

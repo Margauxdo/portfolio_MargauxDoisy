@@ -1,11 +1,18 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import '../styles/components/Apropos.css';
+import Logo from './Logo';
+
 
 
 const Apropos = () => {
     return (
         <div className='AboutMe'>
+
+<div className="progressBar"></div>
+<Logo/>
+
+
 <h3> " Je vous aide à concevoir un site web ou une application mobile, en recherchant des solutions digitales adaptés a votre besoin "</h3>
             <div className='portrait-margaux'>
        

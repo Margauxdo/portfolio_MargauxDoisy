@@ -5,6 +5,8 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faMoon, faSun } from '@fortawesome/free-solid-svg-icons';
 import Home from "./pages/Home";
 import CVonline from "./pages/Cvonline";
+import Apropos from "./components/Apropos";
+import ContactForm from "./components/ContactForm";
 
 
 
@@ -51,7 +53,9 @@ function App() {
         <div className="progressBar" ></div>
         <Routes>
           <Route path="/" element={<Home />} />
+          <Route path="/monHistoire" element={<Apropos/>} />
           <Route path="/cvonline" element={<CVonline />} />
+          <Route path="/contact" element={<ContactForm/>} />
           <Route path="*" element={<Erreur404 />} />
           
         </Routes>

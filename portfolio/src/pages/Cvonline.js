@@ -5,6 +5,7 @@ import { Link } from 'react-router-dom';
 
 import Logo from '../components/Logo';
 import Menu from '../components/Menu';
+import ImgCv from '../components/ImgCv';
 
 
 
@@ -17,11 +18,12 @@ const CVonline = () => {
             <div className="progressBar"></div>
             <Logo/>
             <Menu/>
+
             
             <div className='containAPropos'>
                 <div className='imageSection'>
                     <div className='headerHistory'>
-                        
+                        <ImgCv/>
                     </div>
                 </div>
                 <div className='textSection'>

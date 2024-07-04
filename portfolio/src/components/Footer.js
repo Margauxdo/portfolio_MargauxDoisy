@@ -13,11 +13,11 @@ const Footer = () => {
             </div>
             <div className='textfooter'>
             <Link to="/cvonline">
-                    <p>Accédez à mon CV en ligne</p>
+                    <p>Télécharger mon cv</p>
                 </Link>
                 <ul className='listReseaux'>
-                    <li><Github/></li>
-                    <li><Linkedin/></li>
+                    <li><a href='https://github.com/Margauxdo'><Github/></a></li>
+                    <li><a href='https://www.linkedin.com/in/margaux-doisy-089a90b8/'><Linkedin/></a></li>
                     <li></li>
                 </ul>
             </div>

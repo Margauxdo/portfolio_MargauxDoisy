@@ -1,7 +1,13 @@
 import React, { useState } from "react";
 import'../styles/components/ContactForm.css';
+import Logo from "./Logo";
+
+
+
 
 const ContactForm = () => {
+
+  
     
   const [formData, setFormData] = useState({
     firstName: "",
@@ -57,6 +63,10 @@ const ContactForm = () => {
   };
 
   return (
+    <div className="mainContact">
+      <Logo/>
+      
+    
 
     
     <form onSubmit={handleSubmit}>
@@ -100,7 +110,9 @@ const ContactForm = () => {
       </label>
       <button type="submit">Envoyer</button>
     </form>
+    </div>
   );
 };
+
 
 export default ContactForm;
