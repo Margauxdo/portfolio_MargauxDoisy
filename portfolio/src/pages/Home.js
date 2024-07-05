@@ -9,6 +9,7 @@ import Services from '../components/Services';
 import ContactForm from '../components/ContactForm';
 import Apropos from '../components/Apropos';
 import { Link } from 'react-router-dom';
+import RiveAnimation from '../components/RiveAnimation';
 
 const Home = () => {
     return (
@@ -40,7 +41,7 @@ const Home = () => {
                     </div>
                 </div>
                 <div className='headerimg'>
-                <ImgBW/>s
+                <RiveAnimation/>
                 </div>
                 
 
