@@ -11,6 +11,7 @@ import ContactForm from "./components/ContactForm";
 
 
 
+
 function App() {
   // Récupérer le mode actuel depuis le stockage local, ou utiliser "jour" par défaut
   const [mode, setMode] = useState(localStorage.getItem('mode') || 'jour');
