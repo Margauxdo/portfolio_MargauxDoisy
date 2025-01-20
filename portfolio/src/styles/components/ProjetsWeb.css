@@ -1,0 +1,109 @@
+/* Conteneur principal */
+.containProjet {
+    padding: 40px;
+    display: flex;
+    justify-content: center;
+}
+
+/* Conteneur de tous les projets */
+.main-projet {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Trois colonnes */
+    gap: 20px;
+    width: 100%;
+    max-width: 1200px;
+}
+
+/* Bloc individuel pour chaque projet */
+.bloc-projet {
+
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 350px; /* Hauteur fixe pour uniformité */
+    transition: transform 0.2s ease-in-out;
+    border: 1px solid #9f7809;
+    box-shadow: 2px 2px 3px #513e05;
+}
+
+.bloc-projet:hover {
+    transform: scale(1.05);
+}
+
+/* Image de chaque projet */
+.imgProjet {
+    height: 150px; /* Hauteur initiale de l'image */
+    overflow: hidden;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: height 0.3s ease-in-out;
+}
+
+.imgProjet img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease-in-out;
+}
+
+.bloc-projet:hover .imgProjet {
+    height: 100%; /* L'image prend toute la hauteur du bloc au survol */
+}
+
+.bloc-projet:hover .imgProjet img {
+    transform: scale(1.1); /* Zoom sur l'image pour un effet dynamique */
+}
+
+/* Contenu textuel de chaque projet */
+.text-contain {
+    padding: 15px;
+    text-align: center;
+    flex: 1; /* Permet au texte de s'étirer pour équilibrer la carte */
+}
+
+.text-contain h4 {
+    font-size: 18px;
+    margin-bottom: 10px;
+    color: #9f7809;
+    margin: auto;
+}
+
+/* Liste des langages */
+.list-language ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+}
+
+.list-language li {
+    font-size: 14px;
+    background-color: #9f7809;
+    color: #09002d;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+.main-projet a{
+    text-decoration: none;
+}
+
+/* Media queries pour petits écrans */
+@media (max-width: 992px) {
+    .main-projet {
+        grid-template-columns: repeat(2, 1fr); /* Deux colonnes sur les écrans moyens */
+    }
+}
+
+@media (max-width: 600px) {
+    .main-projet {
+        grid-template-columns: 1fr; /* Une colonne sur les petits écrans */
+    }
+}

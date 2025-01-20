@@ -8,7 +8,7 @@ const Menu = () => {
         <div className='naviguation'>
             <ul>
             
-                <li><Link to="/bodyProjet">Portfolio</Link></li>
+                <li><Link to="/portfolio">Portfolio</Link></li>
                 <li><Link to="/monHistoire">Mon histoire</Link></li>
                 <li><Link to="/cvonline"> Mon parcours</Link></li>
                 <li><Link to="/contact">Contact </Link></li>

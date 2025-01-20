@@ -24,6 +24,9 @@
     width: 100%;
     margin: auto;
 }
+.headerText .titre{
+    border:0px;
+}
 .titre{
     padding-top: 120px;
     padding-left: 50px;

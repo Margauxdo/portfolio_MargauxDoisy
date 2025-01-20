@@ -38,3 +38,6 @@
     display: flex;
     padding-top: 30px;
 }
+.listReseaux li a:hover{
+    border: 0px;
+}
