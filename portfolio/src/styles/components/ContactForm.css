@@ -1,4 +1,4 @@
-form{
+form {
     max-width: 1200px;
     width: 100%;
     border: 1px solid hsl(44, 89%, 33%);
@@ -7,6 +7,9 @@ form{
     margin-top: 60px;
     margin-bottom: 40px;
     box-shadow: 2px 2px 3px hsl(45, 69%, 66%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 label, span{
     color: hsl(252, 100%, 9%);
@@ -28,23 +31,65 @@ textarea{
     padding-bottom: 5px;
 
 }
-Form button{
+
+/* Bouton du formulaire */
+form button {
     color: #9f7809;
     background: hsl(252, 100%, 9%);
     border: 0px;
-    height: 30px;
+    height: 40px;
     font-size: 14px;
     max-width: 200px;
+    width: 100%; /* S'adapte à la largeur du conteneur */
     text-align: center;
-    position: relative;
-    left: 900px;
-    top: 15px;
+    margin-top: 20px; /* Ajoute un espacement entre le bouton et les autres éléments */
     box-shadow: 2px 2px 3px #e4c66d;
     border-radius: 7px;
 }
- Form button:active{
+
+/* État actif du bouton */
+form button:active {
     border: 2px solid hsla(11, 100%, 62.2%, 1);
     background-color: transparent;
-    color:hsla(11, 100%, 62.2%, 1);
+    color: hsla(11, 100%, 62.2%, 1);
     font-weight: 700;
 }
+
+/* Tablette portrait (768px max) */
+@media (max-width: 768px) {
+    form {
+        padding: 40px;
+    }
+
+    form button {
+        max-width: 180px;
+        height: 35px;
+        font-size: 13px;
+    }
+}
+
+/* Tablette paysage (1024px max) */
+@media (max-width: 1024px) {
+    form {
+        padding: 40px;
+    }
+
+    form button {
+        max-width: 200px;
+        height: 38px;
+    }
+}
+
+/* Téléphone (480px max) */
+@media (max-width: 480px) {
+    form {
+        padding: 20px;
+    }
+
+    form button {
+        max-width: 100%;
+        height: 35px;
+        font-size: 12px;
+    }
+}
+

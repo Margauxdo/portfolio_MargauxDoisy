@@ -33,3 +33,109 @@ li:hover::before {
     width: 100%;
     background-color: #CC9789;
 }
+
+.menu-container {
+    position: relative;
+    display: flex;
+    justify-content: flex-end; /* Aligne le hamburger à droite */
+    align-items: center;
+    padding: 10px 20px;
+}
+
+.hamburger {
+    display: none; /* Cachée par défaut pour les grands écrans */
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    width: 30px;
+    height: 25px;
+    cursor: pointer;
+}
+
+.hamburger .bar {
+    width: 100%;
+    height: 3px;
+    background-color: #f1d276;
+    transition: 0.3s;
+}
+
+.naviguation {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.naviguation ul {
+    display: flex;
+    gap: 20px;
+}
+
+.naviguation li {
+    color: #f1d276;
+    font-weight: 300;
+    font-size: 20px;
+    position: relative;
+}
+
+.naviguation a {
+    color: #f1d276;
+    text-decoration: none;
+}
+
+.naviguation a:hover, .naviguation li:hover {
+    color: #CC9789;
+}
+
+/* Effet au survol */
+.naviguation li::before {
+    content: '';
+    position: absolute;
+    top: -5px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 0;
+    height: 2px;
+    background-color: transparent;
+    transition: width 0.3s ease, background-color 0.3s ease;
+}
+
+.naviguation li:hover::before {
+    width: 100%;
+    background-color: #CC9789;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    /* Icône hamburger visible */
+    .hamburger {
+        display: flex;margin: 10px;
+    }
+
+    /* Navigation cachée par défaut */
+    .naviguation {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 60px;
+        right: 20px;
+        border-radius: 5px;
+        padding: 20px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    }
+
+    /* Navigation visible si ouverte */
+    .naviguation.open {
+        display: flex;
+    }
+
+    .naviguation ul {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .naviguation li {
+        text-align: center;
+    }
+}
+

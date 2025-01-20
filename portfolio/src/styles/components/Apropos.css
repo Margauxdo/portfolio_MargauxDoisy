@@ -1,19 +1,19 @@
-.AboutMe h3{
-    color: #F1D276;
-    vertical-align: text-top;
-    text-align: center;
-    font-weight: 300;
-    font-size: 20px;
-    z-index: 11111;
-    position: absolute;
+/* Style global */
+.portrait-margaux {
+    display: flex;
+    max-width: 1800px;
+    width: 100%;
+    margin: auto;
 }
-.portrait-text{
+
+.portrait-text {
     max-width: 800px;
     width: 100%;
     margin: 0px;
     padding-top: 50px;
 }
-.portrait-text p{
+
+.portrait-text p {
     color: #E1E7CE;
     max-width: 1400px;
     text-align: justify;
@@ -23,61 +23,138 @@
     padding-top: 20px;
 }
 
-.portrait-img img{
-    max-width: 400px;
-    position: relative;
-    bottom:50px
-}
-.portrait-img{
+.portrait-img {
     max-width: 800px;
     width: 100%;
     margin: 0px;
-    
 }
-.portrait-img img{
-    max-width: 800px;
 
-    
+.portrait-img img {
+    max-width: 800px;
+    position: relative;
+    bottom: 50px;
 }
-.portrait-margaux{
-    display: flex;
-    max-width: 1800px;
-    width: 100%;
-    margin: auto;
+
+.AboutMe h3 {
+    color: #F1D276;
+    vertical-align: text-top;
+    text-align: center;
+    font-weight: 300;
+    font-size: 20px;
+    z-index: 11111;
+    position: absolute;
 }
-.buttonCv{
+
+.buttonCv {
     width: 250px;
     height: 50px;
     font-size: 14px;
     background: hsl(339, 35%, 79%);
-    border: 0px solid;
+    border: 0;
     border-radius: 5px;
-    position: relative;
-    bottom: 50px;
-    left: 1300px;
     color: #09002d;
     font-weight: 400;
     box-shadow: 2px 2px 2px #e4c5d0;
+    margin: 20px auto 0; /* Centre le bouton et ajoute de l'espace au-dessus */
+    display: block; /* Le bouton occupe toute sa largeur pour le centrage */
+    text-align: center;
 }
-.buttonCv:active{
+
+.buttonCv:active {
     background-color: transparent;
-    border:2px solid hsl(44, 89%, 33%);
+    border: 2px solid hsl(44, 89%, 33%);
     color: hsl(44, 89%, 33%);
 }
+
+/* Animation zoom */
 @keyframes zoomAnimation {
     0% {
-      transform: scale(0); 
+        transform: scale(0);
     }
     50% {
-      transform: scale(1.1); 
+        transform: scale(1.1);
     }
     100% {
-      transform: scale(0.5); 
+        transform: scale(0.5);
     }
-  }
-  
-  .zoom {
+}
+
+.zoom {
     animation: zoomAnimation 1s ease-in-out;
-  }
-  
-  
+}
+
+/* Tablette portrait (768px max) */
+@media (max-width: 768px) {
+    .portrait-margaux {
+        flex-direction: column; /* Empile l'image et le texte */
+        align-items: center;
+    }
+
+    .portrait-img {
+        max-width: 100%;
+        margin-bottom: 20px; /* Espacement sous l'image */
+    }
+
+    .portrait-img img {
+        max-width: 80%; /* Réduit la taille de l'image */
+        margin: auto;
+    }
+
+    .portrait-text {
+        max-width: 90%; /* Réduit la largeur du texte */
+        padding: 0 10px;
+        text-align: center;
+    }
+
+    .buttonCv {
+        width: 220px; /* Réduit la taille du bouton */
+        height: 45px;
+        font-size: 12px;
+    }
+}
+
+/* Tablette paysage (1024px max) */
+@media (max-width: 1024px) {
+    .buttonCv {
+        width: 240px; /* Bouton légèrement plus grand */
+        height: 48px;
+    }
+    .portrait-margaux {
+        flex-direction: column; /* Empile l'image et le texte */
+        align-items: center;
+    }
+
+    .portrait-img img {
+        max-width: 100%; /* Image pleine largeur */
+    }
+
+    .portrait-text {
+        padding: 0 20px; /* Ajuste le padding pour la lisibilité */
+        text-align: justify;
+    }
+}
+
+/* Téléphone (480px max) */
+@media (max-width: 480px) {
+    .portrait-margaux {
+        flex-direction: column; /* Empile tout verticalement */
+        align-items: center;
+    }
+
+    .portrait-img {
+        display: none; /* Masque complètement l'image */
+    }
+
+    .portrait-text {
+        max-width: 100%; /* Texte prend toute la largeur */
+        padding: 0 15px;
+        font-size: 14px; /* Texte plus petit */
+    }
+
+    .buttonCv {
+        width: 200px; /* Bouton plus petit */
+        height: 40px;
+        font-size: 12px;
+
+    }
+}

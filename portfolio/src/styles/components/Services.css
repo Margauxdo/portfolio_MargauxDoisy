@@ -74,11 +74,86 @@
     background-color: #F6B29A;
     transition: width 1s ease; /* Transition pour l'effet de propagation */
     z-index: -1;
-    
+
 }
 
 .webdesign.clicked::before,
 .developpement.clicked::before {
     width: 350px;
     left:200px;
+}
+
+
+/* Responsive pour tablette verticale (768px max) */
+@media (max-width: 768px) {
+    .containService {
+        flex-direction: column; /* Empile les sections */
+        gap: 40px; /* Augmente l'espacement entre les sections */
+    }
+
+    .webdesign,
+    .developpement {
+        max-width: 90%;
+        text-align: center;
+    }
+
+    .service img {
+        max-width: 180px;
+        height: auto;
+    }
+
+    .annotation h4 {
+        text-align: center;
+        font-size: 18px; /* Taille réduite */
+    }
+
+
+}
+
+/* Responsive pour tablette horizontale (1024px max) */
+@media (max-width: 1024px) {
+    .containService {
+        gap: 30px; /* Espacement légèrement réduit */
+    }
+
+    .webdesign,
+    .developpement {
+        max-width: 90%;
+        text-align: center;
+    }
+
+    .service img {
+        max-width: 200px; /* Taille normale */
+    }
+
+    .annotation h4 {
+        font-size: 20px;
+    }
+    .annotationtitre{
+        color: transparent;
+    }
+}
+
+/* Responsive pour téléphone (480px max) */
+@media (max-width: 480px) {
+    .containService {
+        flex-direction: column; /* Empile tous les éléments */
+        padding: 0 15px; /* Ajoute un padding pour les petits écrans */
+        gap: 20px; /* Réduit l'espacement */
+    }
+
+    .webdesign,
+    .developpement {
+        max-width: 100%;
+    }
+
+    .service img {
+        display: none; /* Cache complètement les images */
+    }
+
+    .annotation h4 {
+        text-align: left;
+        font-size: 18px;
+    }
+
 }
