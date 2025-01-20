@@ -1,7 +1,9 @@
 .header .headerimg img{
-    max-width: 900px;
+    max-width: 350px;
     width: 100%;
-    height: 700px;
-    object-fit: cover;
-    float: inline-end;
+    height: 500px;
+    object-fit:contain;
+    float: right;
+    align-content: center;
+
 }

@@ -25,14 +25,14 @@ const Apropos = () => {
                     Mon parcours, marqué par une soif de connaissances et une détermination sans faille, témoigne d'une aventure riche en découvertes 
                     et en défis.</p>
                     <p>Dès mes premiers pas dans le monde du webdesign, j'ai été captivée par l'art de créer des expériences en ligne uniques et captivantes. 
-                    Pourtant, mon appétit pour l'appren-tissage m'a poussée à explorer de nouveaux territoires. Intriguée par les mystères du référencement naturel (SEO), 
-                    j'ai plongé dans cette discipline complexe, afin de com-prendre ses subtilités et ses implications.</p>
+                    Pourtant, mon appétit pour l'apprentissage m'a poussée à explorer de nouveaux territoires. Intriguée par les mystères du référencement naturel (SEO),
+                    j'ai plongé dans cette discipline complexe, afin de comprendre ses subtilités et ses implications.</p>
                     <p>Cette exploration m'a ouvert les portes du développement web, où chaque ligne de code devient une opportunité de construire et d'innover. 
                     Chez OpenClassrooms, j'ai trouvé un refuge pour cultiver ma passion et affiner mes compétences. La maîtrise de JavaScript et l'exploration de ses 
-                    Framework ont été autant de défis stimulants qui ont enrichi mon parcours.</p>
-                    <p>Aujourd'hui, animée par le désir de repousser mes limites, je me lance dans une nou-velle aventure académique au sein de JuniaXP. 
-                    L'obtention d'un diplôme de dévelop-peur informatique est pour moi une étape cruciale dans ma quête de perfectionnement et d'excellence. 
-                    Je suis déterminée à explorer le développement backend, afin d’y maî-triser les outils numériques de demain.</p>
+                    Framework ont été autant de défis stimulants qui ont enrichi mon parcours, je me suis spécialisée sur React.js</p>
+                    <p>Animée par le désir de repousser mes limites, je me suis lancé dans une nouvelle aventure académique au sein de M2I Formation.
+                    L'obtention de connaissances de développeuse informatique est pour moi une étape cruciale dans ma quête de perfectionnement et d'excellence.
+                    Je suis déterminée à explorer le développement backend, afin d’y maîtriser les outils numériques de demain, notamment en apprenant Java, Spring et PostgreSQL</p>
                     <p>Cependant, ma quête ne saurait être complète sans une immersion totale dans le monde professionnel. 
                     C'est pourquoi je suis à la recherche d'une entreprise engagée, soucieuse de l'humain et de l'environnement, où je pourrai mettre en pratique 
                     mes compétences et contribuer à des projets porteurs de sens.</p>

@@ -5,7 +5,7 @@ const ImgBW = () => {
     return (
         <div >
             
-            <img src="./MargauxBW.png" alt="margaux" />
+            <img src="./moi_img.png" alt="margaux" />
         </div>
     );
 };

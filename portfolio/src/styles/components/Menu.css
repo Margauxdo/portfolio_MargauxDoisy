@@ -5,7 +5,31 @@
     padding-top: 80px;
 }
 li {
-    color: hsl(11deg 76.79% 68.39%);
+    color: #f1d276;
     font-weight: 300;
     font-size: 20px;
+    position: relative;
+}
+.nav a {
+    color : #f1d276;
+    text-decoration: none;
+}
+.nav a:hover, li:hover{
+    color: #CC9789;
+}
+li::before {
+    content: '';
+    position: absolute;
+    top: -5px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 0;
+    height: 2px;
+    background-color: transparent;
+    transition: width 0.3s ease, background-color 0.3s ease;
+}
+
+li:hover::before {
+    width: 100%;
+    background-color: #CC9789;
 }

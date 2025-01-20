@@ -5,26 +5,30 @@
     margin: auto;
 }
 .footer{
-    max-width: 2200px;
+    max-width: 3500px;
     width: 100%;
-    background-color: hsl(11, 92%, 90%);
+    border-top: 3px solid #CC9789;
+    border-style: double;
+
 }
 .logofooter{
     max-width: 800px;
     width: 100%;
     margin: auto;
 }
+
 .textfooter{
     max-width: 1000px;
     width: 100%;
     margin: auto;
+
 }
 .textfooter a {
     text-decoration: none;
     font-size: 22px;
     font-family: "Bodoni Moda", serif;
     font-weight: 700;
-    color: #0C3450;
+    color: #CC9789;;
 }
 .textfooter ul{
     list-style-type: none;
