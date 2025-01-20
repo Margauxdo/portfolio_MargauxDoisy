@@ -13,6 +13,7 @@
     display: flex;
     justify-content: flex-start;
     margin: 0px;
+}
 
 .imageSection img {
     width: 100%;
@@ -45,18 +46,55 @@
     text-align: justify; /* Justifie le texte */
 }
 
-
-
-
-
-/* Pour les écrans plus petits */
-@media (max-width: 768px) {
+/* Style pour les tablettes en mode paysage (1024px max) */
+@media (max-width: 1024px) {
     .containAPropos {
         flex-direction: column; /* Empile les sections verticalement */
+        gap: 0; /* Supprimer l'espacement entre les sections */
     }
 
-    .imageSection,
-    .textSection {
-        flex: 1 1 100%; /* Chaque section occupe toute la largeur */
+    .imageSection {
+        flex: 0 0 100%; /* L'image occupe toute la largeur */
+        margin-bottom: 20px; /* Ajouter un espacement sous l'image */
     }
-}}
+
+    .imageSection img {
+        width: 100%; /* Image pleine largeur */
+    }
+
+    .textSection {
+        flex: 0 0 100%; /* Le texte occupe toute la largeur */
+        padding: 0 20px; /* Ajouter des marges latérales */
+    }
+}
+
+/* Style pour les téléphones (480px max) */
+@media (max-width: 480px) {
+    .containAPropos {
+        flex-direction: column; /* Empile uniquement les sections de texte */
+        padding: 10px;
+    }
+
+    .imageSection {
+        display: none; /* Masque complètement l'image */
+    }
+
+    .textSection {
+        width: 100%; /* Prend toute la largeur */
+        padding: 0 10px; /* Réduction des marges */
+    }
+
+    .headerText h1 {
+        font-size: 20px; /* Texte plus petit */
+    }
+
+    .buttonHeader button {
+        font-size: 12px; /* Boutons plus petits */
+        padding: 8px;
+    }
+
+    .menuheader,
+    .logoheader {
+        max-width: 100%;
+    }
+}
