@@ -15,6 +15,9 @@ const Footer = () => {
                 <a href="/MargauxDoisy_CV_DeveloppeuseWeb.pdf" download>
                     <p>Télécharger mon CV</p>
                 </a>
+                <a href="/Mentions_Legales_MargauxDoisy.pdf" download>
+                    <p>Mentions légales</p>
+                </a>
                 <ul className='listReseaux'>
                     <li><a href='https://github.com/Margauxdo'><Github/></a></li>
                     <li><a href='https://www.linkedin.com/in/margaux-doisy-089a90b8/'><Linkedin/></a></li>
