@@ -23,14 +23,18 @@ input{
     height: 30px;
     padding-top: 5px;
     padding-bottom: 5px;
+        background-color: #e1e7ce;
 }
 textarea{
     border: 0.5px solid hsl(252, 100%, 9%);
     height: 80px;
     padding-top: 5px;
     padding-bottom: 5px;
-
+ background-color: #e1e7ce;
 }
+
+
+
 
 /* Bouton du formulaire */
 form button {

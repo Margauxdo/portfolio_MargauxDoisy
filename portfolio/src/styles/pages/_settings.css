@@ -14,6 +14,7 @@ h1{
   font-size: 38px;
   font-weight: 500;
   color: #f1d276;
+  text-align:center;
 }
 h2{
   font-size: 32px;
@@ -50,6 +51,7 @@ p{
   font-size: 55px;
   color:#CC9789;
 }
+
 .presentation h3{
   font-size:45px;
   text-align: center;
@@ -70,11 +72,50 @@ p{
   font-size: 18px;
   color: #CC9789;
 }
-.formation p, .projets p, .qualites p{
+.formation p, .projets p{
   margin-left: 50px;
   color:#E1E7CE;
   margin-bottom: 20px;
 }
+.qualites p{
+margin-left: 50px;
+  color:#E1E7CE;
+    margin-bottom: 200px;
+    }
 .listService ul{
   margin-bottom: 50px;
+}
+
+
+@media (max-width: 1024px) {
+.qualites p{
+padding-right:10px;
+margin-left:10px;
+}
+}
+
+@media (max-width: 768px) {
+
+.formation h2, .projets h2, .competences h2, .qualites h2{
+text-align: left;
+}
+
+.formation h4, .projets h4, .competences h4, .qualites h4, .listService li, .listUsers li, .projets p, .formation p{
+margin-left:10px;
+}
+
+.imgLinkedin img, .imgGithub img {
+     max-width: 40px;
+     }
+
+}
+
+@media (max-width:480px){
+
+.listUsers li, .listService li{
+    margin-left:0px;
+    }
+ .presentation h2, .presentation h3{
+ text-align:center;
+ }
 }

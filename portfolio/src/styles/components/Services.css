@@ -83,6 +83,10 @@
     left:200px;
 }
 
+.projets{
+padding-top:50px;
+}
+
 
 /* Responsive pour tablette verticale (768px max) */
 @media (max-width: 768px) {
@@ -102,13 +106,19 @@
         height: auto;
     }
 
-    .annotation h4 {
-        text-align: center;
-        font-size: 18px; /* Taille réduite */
+     .tirettitre,
+        .pointtitre {
+            display: none; /* Masque les éléments */
+        }
+
+        .annotation h4 {
+            text-align: center;
+            font-size: 18px;
+        }
     }
 
 
-}
+
 
 /* Responsive pour tablette horizontale (1024px max) */
 @media (max-width: 1024px) {
@@ -116,8 +126,7 @@
         gap: 30px; /* Espacement légèrement réduit */
     }
 
-    .webdesign,
-    .developpement {
+    .webdesign,.developpement {
         max-width: 90%;
         text-align: center;
     }
@@ -126,12 +135,15 @@
         max-width: 200px; /* Taille normale */
     }
 
-    .annotation h4 {
-        font-size: 20px;
-    }
-    .annotationtitre{
-        color: transparent;
-    }
+    .tirettitre,.pointtitre {
+           display: none; /* Masque les éléments */
+       }
+
+       .annotation h4 {
+           text-align: center; /* Centre le texte pour compenser l'absence des éléments */
+           font-size: 18px;
+       }
+
 }
 
 /* Responsive pour téléphone (480px max) */
@@ -151,9 +163,14 @@
         display: none; /* Cache complètement les images */
     }
 
+    .tirettitre,.pointtitre {
+            display: none; /* Masque les éléments */
+        }
+
     .annotation h4 {
-        text-align: left;
-        font-size: 18px;
-    }
+            text-align: left; /* Aligne le texte à gauche pour mobile */
+            font-size: 16px; /* Ajuste la taille du texte pour les petits écrans */
+        }
+
 
 }

@@ -1,14 +1,8 @@
 import React, { useState } from "react";
-import'../styles/components/ContactForm.css';
-import Logo from "./Logo";
-
-
-
+import ReCAPTCHA from "react-google-recaptcha";
+import "../styles/components/ContactForm.css";
 
 const ContactForm = () => {
-
-  
-    
   const [formData, setFormData] = useState({
     firstName: "",
     lastName: "",
@@ -16,6 +10,9 @@ const ContactForm = () => {
     message: "",
   });
 
+  const [isCaptchaVerified, setIsCaptchaVerified] = useState(false);
+
+  // Gère les changements dans les champs de formulaire
   const handleChange = (e) => {
     const { name, value } = e.target;
     setFormData({
@@ -24,95 +21,93 @@ const ContactForm = () => {
     });
   };
 
-  const handleSubmit = async (e) => {
+  // Gère la vérification du reCAPTCHA
+  const handleCaptcha = (value) => {
+    setIsCaptchaVerified(!!value); // Définit l'état à "true" si le CAPTCHA est validé
+  };
+
+  // Gère la soumission du formulaire
+  const handleSubmit = (e) => {
     e.preventDefault();
 
-    // Validation des données (vérifie si tous les champs sont remplis)
+    // Validation des champs obligatoires
     if (!formData.firstName || !formData.lastName || !formData.email) {
       alert("Veuillez remplir tous les champs obligatoires.");
       return;
     }
 
-    // Envoyer les données à l'adresse e-mail spécifiée
-    try {
-      const response = await fetch("URL_DE_VOTRE_API", {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-        },
-        body: JSON.stringify(formData),
-      });
-      
-      // Si la requête est réussie, afficher un message de succès
-      if (response.ok) {
-        alert("Votre message a été envoyé avec succès !");
-        // Réinitialiser le formulaire après l'envoi
-        setFormData({
-          firstName: "",
-          lastName: "",
-          email: "",
-          message: "",
-        });
-      } else {
-        // Si la requête a échoué, afficher un message d'erreur
-        alert("Une erreur s'est produite lors de l'envoi du message.");
-      }
-    } catch (error) {
-      console.error("Erreur lors de l'envoi du message :", error);
+    // Vérification reCAPTCHA
+    if (!isCaptchaVerified) {
+      alert("Veuillez vérifier le CAPTCHA avant de soumettre.");
+      return;
     }
+
+    // Construction du lien mailto
+    const mailtoLink = `mailto:margauxdoisy@gmail.com?subject=Message de ${formData.firstName} ${formData.lastName}&body=Nom : ${formData.firstName} ${formData.lastName}%0AEmail : ${formData.email}%0AMessage : ${formData.message}`;
+    window.location.href = mailtoLink;
+
+    // Réinitialisation du formulaire
+    setFormData({
+      firstName: "",
+      lastName: "",
+      email: "",
+      message: "",
+    });
+    setIsCaptchaVerified(false);
   };
 
   return (
     <div className="mainContact">
-    
-      
-    
-
-    
-    <form onSubmit={handleSubmit}>
-      <label>
-        Prénom : <span>*</span>
-        <input
-          type="text"
-          name="firstName"
-          value={formData.firstName}
-          onChange={handleChange}
-          required
+      <form onSubmit={handleSubmit}>
+        <label>
+          Prénom : <span>*</span>
+          <input
+            type="text"
+            name="firstName"
+            value={formData.firstName}
+            onChange={handleChange}
+            required
+          />
+        </label>
+        <label>
+          Nom : <span>*</span>
+          <input
+            type="text"
+            name="lastName"
+            value={formData.lastName}
+            onChange={handleChange}
+            required
+          />
+        </label>
+        <label>
+          E-mail : <span>*</span>
+          <input
+            type="email"
+            name="email"
+            value={formData.email}
+            onChange={handleChange}
+            required
+          />
+        </label>
+        <label>
+          Message :
+          <textarea
+            name="message"
+            value={formData.message}
+            onChange={handleChange}
+            required
+          />
+        </label>
+        <ReCAPTCHA
+          sitekey="6Ldi078qAAAAAMhk68dCGyyLofC9q6DuDJAg1Oz5" // Clé reCAPTCHA v2
+          onChange={handleCaptcha}
         />
-      </label>
-      <label>
-        Nom : <span>*</span>
-        <input
-          type="text"
-          name="lastName"
-          value={formData.lastName}
-          onChange={handleChange}
-          required
-        />
-      </label>
-      <label>
-        E-mail : <span>*</span>
-        <input
-          type="email"
-          name="email"
-          value={formData.email}
-          onChange={handleChange}
-          required
-        />
-      </label>
-      <label>
-        Message :
-        <textarea
-          name="message"
-          value={formData.message}
-          onChange={handleChange}
-        />
-      </label>
-      <button type="submit">Envoyer</button>
-    </form>
+        <button type="submit" disabled={!isCaptchaVerified}>
+          Envoyer
+        </button>
+      </form>
     </div>
   );
 };
-
 
 export default ContactForm;

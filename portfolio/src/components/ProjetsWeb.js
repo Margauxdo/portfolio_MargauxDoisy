@@ -70,6 +70,9 @@ const ProjetsWeb = () => {
                         <h4>Portfolio</h4>
                     </div>
                 </div>
+                <div className='titreh2'>
+                    <h2>Mes projets  </h2>
+                </div>
                 <div className="main-projet">
                     {projets.map((projet, index) => (
                         <a

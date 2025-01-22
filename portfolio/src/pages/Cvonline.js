@@ -3,6 +3,8 @@ import '../styles/pages/CVonline.css';
 import Logo from '../components/Logo';
 import Menu from '../components/Menu';
 import ImgCv from '../components/ImgCv';
+import Footer from '../components/Footer';
+
 
 const CVonline = () => {
     return (
@@ -22,14 +24,11 @@ const CVonline = () => {
 
             {/* Contenu principal */}
             <div className="containAPropos">
-                <div className="imageSection">
-                    <div className="headerHistory">
-                        <ImgCv />
-                    </div>
-                </div>
+
 
                 <div className="textSection">
                     <div className="mainHistory">
+
                         {/* Présentation */}
                         <div className="presentation">
                             <div className="containTitle">
@@ -44,6 +43,14 @@ const CVonline = () => {
                                 volonté d'apprendre sont mes meilleurs atouts pour relever les défis à venir.
                             </p>
                         </div>
+
+                            <div className="bodyCV">
+                        <div className="imageSection">
+                           <div className="headerHistory">
+                              <ImgCv />
+                           </div>
+                        </div>
+                        <div className="textCV">
 
                         {/* Formations */}
                         <div className="formation">
@@ -171,8 +178,16 @@ const CVonline = () => {
                         </div>
                     </div>
                 </div>
+                </div>
             </div>
+
+            </div>
+
+            {/* Footer */}
+                        <Footer />
         </div>
+
+
     );
 };
 
