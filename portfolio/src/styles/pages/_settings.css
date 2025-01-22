@@ -48,7 +48,7 @@ p{
 }
 .containTitle h2{
   margin: 50px 0px;
-  font-size: 55px;
+  font-size: 40px;
   color:#CC9789;
 }
 
@@ -90,6 +90,10 @@ margin-left: 50px;
 padding-right:10px;
 margin-left:10px;
 }
+
+.containTitle h2 {
+    font-size: 35px;
+}
 }
 
 @media (max-width: 768px) {
@@ -112,6 +116,7 @@ margin-left:10px;
 
 .listUsers li, .listService li{
     margin-left:0px;
+    font-size: 14px;
     }
  .presentation h2, .presentation h3{
  text-align:center;
@@ -121,4 +126,19 @@ margin-left:10px;
      font-size: 20px;
      text-align: left;
      margin-left: 20px;}
+}
+ .containTitle h2 {
+        font-size: 25px;
+}
+.formation h4, .projets h4, .competences h4, .qualites h4 {
+    font-size: 16px;
+    }
+p{
+    font-size:14px;
+}
+.presentation h3 {
+    font-size: 30px;
+    text-align: center;
+    color: #9f7809;
+    margin-bottom: 20px;
 }

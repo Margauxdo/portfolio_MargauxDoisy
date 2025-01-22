@@ -161,6 +161,9 @@ padding-top:50px;
         max-width: 200px;
 
     }
+    .service img {
+            max-width: 100px;
+    }
 
     .webdesign,
     .developpement {
@@ -177,9 +180,12 @@ padding-top:50px;
        font-size: 16px;
        margin-left: 20px;
     }
-        .projets{
+    .projets{
             padding-top: 0px;
-        }
+    }
+    .titleservice h3{
+    font-size: 16px;
+    }
 
 
 

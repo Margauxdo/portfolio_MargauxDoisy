@@ -58,10 +58,9 @@
         color: #09002d;
         font-weight: 400;
         box-shadow: 2px 2px 2px #e4c5d0;
-        margin: auto;
+        margin: 20px 700px;
         display: block;
         text-align: center;
-        margin-bottom: 50px;
         font-weight: 400;
         text-transform: uppercase;
 }
@@ -98,44 +97,46 @@
 
     .portrait-img {
         max-width: 100%;
-        margin-bottom: 20px; /* Espacement sous l'image */
+        margin-bottom: 20px;
     }
 
     .portrait-img img {
-        max-width: 80%; /* Réduit la taille de l'image */
+        max-width: 80%;
         margin: auto;
     }
 
     .portrait-text {
-        max-width: 90%; /* Réduit la largeur du texte */
+        max-width: 90%;
         padding: 0 10px;
         text-align: center;
     }
 
     .buttonCv {
-        width: 220px; /* Réduit la taille du bouton */
+        width: 220px;
         height: 45px;
         font-size: 12px;
+
     }
 }
 
 /* Tablette paysage (1024px max) */
 @media (max-width: 1024px) {
     .buttonCv {
-        width: 240px; /* Bouton légèrement plus grand */
+        width: 240px;
         height: 48px;
+        margin: 20px 250px;
     }
     .portrait-margaux {
-        flex-direction: column; /* Empile l'image et le texte */
+        flex-direction: column;
         align-items: center;
     }
 
     .portrait-img img {
-        max-width: 100%; /* Image pleine largeur */
+        max-width: 100%;
     }
 
     .portrait-text {
-        padding: 0 20px; /* Ajuste le padding pour la lisibilité */
+        padding: 0 20px;
         text-align: justify;
     }
     .AboutMe h3{
@@ -146,24 +147,25 @@
 /* Téléphone (480px max) */
 @media (max-width: 480px) {
     .portrait-margaux {
-        flex-direction: column; /* Empile tout verticalement */
+        flex-direction: column;
         align-items: center;
     }
 
     .portrait-img {
-        display: none; /* Masque complètement l'image */
+        display: none;
     }
 
     .portrait-text {
-        max-width: 100%; /* Texte prend toute la largeur */
+        max-width: 100%;
         padding: 0 15px;
-        font-size: 14px; /* Texte plus petit */
+        font-size: 14px;
     }
 
     .buttonCv {
-        width: 200px; /* Bouton plus petit */
+        width: 200px;
         height: 40px;
         font-size: 12px;
+        margin: 20px 100px;
 
     }
 
@@ -172,6 +174,7 @@
      margin-left: 20px;
      position: relative;
      bottom: 20px;
+     font-size: 16px;
 }
 
     .monHistoire .titre{
