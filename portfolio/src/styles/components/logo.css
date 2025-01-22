@@ -7,4 +7,9 @@
     margin-top: 10px;
 }
 
+@media (width:480px){
+    .logoMD{
+        max-width: 150px;}
+}
+
 

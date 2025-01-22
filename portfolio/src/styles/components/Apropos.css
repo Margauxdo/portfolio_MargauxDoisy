@@ -5,6 +5,9 @@
     width: 100%;
     margin: auto;
 }
+.AboutMe a{
+    text-decoration: none;
+    }
 
 .portrait-text {
     max-width: 800px;
@@ -46,18 +49,21 @@
 }
 
 .buttonCv {
-    width: 250px;
-    height: 50px;
-    font-size: 14px;
-    background: hsl(339, 35%, 79%);
-    border: 0;
-    border-radius: 5px;
-    color: #09002d;
-    font-weight: 400;
-    box-shadow: 2px 2px 2px #e4c5d0;
-    margin: 20px auto 0; /* Centre le bouton et ajoute de l'espace au-dessus */
-    display: block; /* Le bouton occupe toute sa largeur pour le centrage */
-    text-align: center;
+        width: 250px;
+        height: 50px;
+        font-size: 14px;
+        background: hsl(339, 35%, 79%);
+        border: 0;
+        border-radius: 5px;
+        color: #09002d;
+        font-weight: 400;
+        box-shadow: 2px 2px 2px #e4c5d0;
+        margin: auto;
+        display: block;
+        text-align: center;
+        margin-bottom: 50px;
+        font-weight: 400;
+        text-transform: uppercase;
 }
 
 .buttonCv:active {
@@ -132,6 +138,9 @@
         padding: 0 20px; /* Ajuste le padding pour la lisibilité */
         text-align: justify;
     }
+    .AboutMe h3{
+    width: 90%;
+        margin-left: 50px;}
 }
 
 /* Téléphone (480px max) */
@@ -157,4 +166,15 @@
         font-size: 12px;
 
     }
+
+    .AboutMe h3 {
+     width: 90%;
+     margin-left: 20px;
+     position: relative;
+     bottom: 20px;
+}
+
+    .monHistoire .titre{
+        padding-bottom: 50px;
+        }
 }

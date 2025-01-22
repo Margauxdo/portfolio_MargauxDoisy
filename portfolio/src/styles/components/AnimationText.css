@@ -8,3 +8,20 @@
     text-transform: capitalize;
     text-align:center;
 }
+
+@media (max-width:768px){
+.header .headerimg img {
+        height: 200px;
+        margin: 0px 0px 0px 0px;
+    }
+
+    }
+
+@media (max-width:480px) {
+.header h4{
+    font-size:18px;
+    padding-left:0px;
+    padding-top:10px;
+
+    }
+}

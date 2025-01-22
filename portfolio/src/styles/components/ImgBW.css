@@ -6,3 +6,18 @@
     align-content: center;
     margin: 0px 30px;
 }
+
+@media (max-width:768px){
+.header .headerimg img {
+    height: 300px;
+    margin: 50px 0px 0px 0px;
+    }
+    }
+
+@media (max-width:480px){
+.header .headerimg img {
+        height: 200px;
+        margin: 0px 0px 0px 0px;
+    }
+
+}

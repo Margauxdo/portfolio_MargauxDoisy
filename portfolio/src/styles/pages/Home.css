@@ -120,8 +120,38 @@ width:100%;
         max-width: 90%;
         margin: 0 10px;
     }
+
+    .contactMe h2{
+        padding-top: 50px;
+        }
     .fade-in{
     margin:0px;}
+}
+
+/* Tablette paysage (1024px max) */
+@media (max-width: 1024px) {
+
+.headerText{
+margin-left:50px;
+}
+.buttonHeader button {
+    max-width: 200px;
+    margin: 30px 30px;
+    }
+.buttonHeader{
+flex-direction: column-reverse;
+    padding: 50px 200px;
+}
+}
+
+@media(max-width:768px ){
+
+.headerText {
+        margin-left: 0px;
+}
+.titre{
+    padding-top: 0px;
+    padding-left: 0px;}
 }
 
 /* Téléphone (480px max) */
@@ -144,9 +174,13 @@ width:100%;
     }
 
     .buttonHeader {
-        flex-direction: column;
-        gap: 10px;
+       padding: 0px 110px;
 }
+
+    .buttonHeader button {
+    max-width: 200px;
+    margin: 10px 30px;
+       }
 }
 
 

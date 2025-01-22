@@ -65,9 +65,7 @@ p{
   font-size: 16px;
   padding-bottom: 50px;
 }
-.formation h2, .projets h2, .competences h2, .qualites h2{
-  color: #9f7809;
-}
+
 .formation h4, .projets h4, .competences h4, .qualites h4{
   font-size: 18px;
   color: #CC9789;
@@ -118,4 +116,9 @@ margin-left:10px;
  .presentation h2, .presentation h3{
  text-align:center;
  }
+
+ h2{
+     font-size: 20px;
+     text-align: left;
+     margin-left: 20px;}
 }

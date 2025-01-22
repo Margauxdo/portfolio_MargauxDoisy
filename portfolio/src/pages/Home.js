@@ -70,7 +70,22 @@ const Home = () => {
             </div>
 
             <div className='bodyProjet'>
-                <ProjetsWeb/>
+            <div className='containHistory'>
+                                <div className='titre'>
+                                    <div className='annotationtitre'>
+                                        <div className='tirettitre'></div>
+                                        <div className='pointtitre'></div>
+                                        <div className='annotation'>
+                                            <h4> Portfolio</h4>
+                                        </div>
+                                    </div>
+                                    <div className='titreh2'>
+                                        <h2>Mes projets</h2>
+                                    </div>
+                                </div>
+                                <ProjetsWeb/>
+                            </div>
+
 
             </div>
 
